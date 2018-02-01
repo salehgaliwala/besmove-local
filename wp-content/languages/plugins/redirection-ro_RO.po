@@ -1,0 +1,655 @@
+# Translation of Plugins - Redirection - Stable (latest release) in Romanian
+# This file is distributed under the same license as the Plugins - Redirection - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-06-06 07:38:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: Plugins - Redirection - Stable (latest release)\n"
+
+#: view/options.php:111
+msgid "Are you sure you want to delete everything?"
+msgstr "Sigur vrei să ștergi tot?"
+
+#: view/item-edit.php:35
+msgid "Advanced Settings"
+msgstr "Setări avansate"
+
+#. Author URI of the plugin/theme
+msgid "http://urbangiraffe.com"
+msgstr "http://urbangiraffe.com"
+
+#. Author of the plugin/theme
+msgid "John Godley"
+msgstr "John Godley"
+
+#. Description of the plugin/theme
+msgid "Manage all your 301 redirects and monitor 404 errors"
+msgstr "Administrează-ți toate redirecționările 301 și monitorizează erorile 404"
+
+#. Plugin URI of the plugin/theme
+msgid "http://urbangiraffe.com/plugins/redirection/"
+msgstr "http://urbangiraffe.com/plugins/redirection/"
+
+#: view/support.php:87
+msgid "Full details of producing a translation can be found in this <a href=\"http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/\">guide to translating WordPress plugins</a>."
+msgstr "Detalii complete pentru o traducere pot fi găsite în acest <a href=\"http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/\">ghid pentru traducerea modulelor WordPress</a>."
+
+#: view/support.php:77
+msgid "Translations"
+msgstr "Traduceri"
+
+#: view/support.php:56
+msgid "Commercial<br/>Donation"
+msgstr "Donație<br/>comercială"
+
+#: view/support.php:36
+msgid "Individual<br/>Donation"
+msgstr "Donație<br/>individuală"
+
+#: view/support.php:13
+msgid "If you are using this plugin in a commercial setup, or feel that it's been particularly useful, then you may want to consider a <strong>commercial donation</strong>."
+msgstr "Dacă folosești acest modul într-un mediu comercial sau consideri că ți-a fost deosebit de util, atunci poate ai vrea să iei în considerare o <strong>donație comercială</strong>."
+
+#: view/support.php:11
+msgid "Please note that a donation is just a donation - it is not a payment for support. I am not a business, this is not a product, and I'm afraid I cannot provide paid support"
+msgstr "Te rog reține că o donație este doar o donație - nu este o plată pentru suport. Eu nu sunt un om de afaceri, acesta nu este un produs și mi-e teamă că nu pot oferi suport plătit"
+
+#: view/support.php:8
+msgid "This will act as an incentive for me to carry on developing. You get some useful software and I get to carry on making it.  Everybody wins."
+msgstr "Va fi un stimulent pentru mine să continui dezvoltarea. Tu obții câteva programe utile și eu continui să le fac. Toată lumea câștigă."
+
+#: view/support.php:7
+msgid "Redirection is free to use - life is wonderful and lovely!  However, it has required a great deal of time and effort to develop and if it has been useful you can help support this development by <strong>making a small donation</strong>."
+msgstr "Redirecționare este gratuit - viața e minunată! Totuși, a necesitat mult timp și efort pentru a-l dezvolta și, dacă ți-a fost de folos, poți contribui la acest proiect <strong>făcând o mică donație</strong>."
+
+#: view/support.php:3
+msgid "Redirection Support"
+msgstr "Suport pentru Redirecționare"
+
+#: view/submenu.php:47
+msgid "Support"
+msgstr "Suport"
+
+#: view/submenu.php:34
+msgid "404s"
+msgstr "Erori 404"
+
+#: view/submenu.php:32
+msgid "404s from %s"
+msgstr "Erori 404 din %s"
+
+#: view/submenu.php:23
+msgid "Log"
+msgstr "Jurnal"
+
+#: view/options.php:106
+msgid "Selecting this option will delete all redirections, all logs, and any options associated with the Redirection plugin.  Make sure this is what you want to do."
+msgstr "Selectarea acestei opțiuni va șterge toate redirecționările, toate jurnalele și orice opțiuni asociate cu modulul Redirecționare. Asigură-te că asta vrei să faci."
+
+#: view/options.php:105
+msgid "Delete Redirection"
+msgstr "Șterge Redirecționare"
+
+#: view/options.php:95
+msgid "Upload"
+msgstr "Încărcare"
+
+#: view/options.php:92
+msgid "Import into"
+msgstr "Importă în"
+
+#: view/options.php:85
+msgid "Here you can import redirections from an existing <code>.htaccess</code> file, or a CSV file."
+msgstr "Aici poți importa redirecționări dintr-un fișier <code>.htaccess</code> existent sau dintr-un fișier CSV."
+
+#: view/options.php:83
+msgid "Import"
+msgstr "Import"
+
+#: view/options.php:77
+msgid "Update"
+msgstr "Actualizare"
+
+#: view/options.php:72
+msgid "This will be used to auto-generate a URL if no URL is given.  You can use the special tags <code>$dec$</code> or <code>$hex$</code> to have a unique ID inserted (either decimal or hex)"
+msgstr "Va fi folosit pentru a genera automat un URL dacă niciun URL nu este dat. Poți folosi tag-uri speciale <code>$dec$</code> sau <code>$hex$</code> pentru a avea un ID unic inserat (fie zecimal ori hex)"
+
+#: view/options.php:68
+msgid "Auto-generate URL"
+msgstr "URL generat automat"
+
+#: view/options.php:64
+msgid "A unique token allowing feed readers access to Redirection log RSS (leave blank to auto-generate)"
+msgstr "Un token unic care permite accesul fluxului de cititori la jurnalul RSS de redirecționare (lasă necompletat pentru generare automată)"
+
+#: view/options.php:61
+msgid "RSS Token"
+msgstr "Token RSS"
+
+#: view/options.php:55
+msgid "Don't monitor"
+msgstr "Nu monitoriza"
+
+#: view/options.php:52
+msgid "Monitor changes to posts"
+msgstr "Monitorizează schimbări în articole"
+
+#: view/options.php:42
+msgid "404 Logs"
+msgstr "Jurnale 404"
+
+#: view/options.php:38 view/options.php:48
+msgid "(time to keep logs for)"
+msgstr "(perioadă de păstrare a jurnalelor)"
+
+#: view/options.php:32
+msgid "Redirect Logs"
+msgstr "Jurnale redirecționare"
+
+#: view/options.php:28
+msgid "I'm a nice person and I have helped support the author of this plugin"
+msgstr "Sunt o persoană de treabă și am sprijinit autorul acestui modul"
+
+#: view/options.php:25
+msgid "Plugin Support"
+msgstr "Suport modul"
+
+#: view/options.php:17 view/submenu.php:42
+msgid "Options"
+msgstr "Opțiuni"
+
+#: view/options.php:11
+msgid "Keep forever"
+msgstr "Păstrează pentru totdeauna"
+
+#: view/options.php:10
+msgid "Two months"
+msgstr "Două luni"
+
+#: view/options.php:9
+msgid "A month"
+msgstr "O lună"
+
+#: view/options.php:8
+msgid "A week"
+msgstr "O săptămână"
+
+#: view/options.php:7
+msgid "A day"
+msgstr "O zi"
+
+#: view/options.php:6
+msgid "No logs"
+msgstr "Niciun jurnal"
+
+#: view/module-list.php:3 view/submenu.php:16
+msgid "Modules"
+msgstr "Extensii"
+
+#: view/log.php:26
+msgid "Export To CSV"
+msgstr "Exportă în CSV"
+
+#: view/log.php:23
+msgid "Delete All"
+msgstr "Șterge tot"
+
+#: view/log.php:21
+msgid "These apply to the current search term, if any, otherwise all logs."
+msgstr "Acestea se aplică termenului de căutare curent, dacă există, în caz contrar tuturor jurnalelor."
+
+#: view/log.php:17
+msgid "Log Management"
+msgstr "Administrare jurnal"
+
+#: view/log.php:3
+msgid "Redirection Log"
+msgstr "Jurnal redirecționare"
+
+#: view/item-edit.php:14
+msgid "optional"
+msgstr "opțional"
+
+#: view/item-edit.php:11
+msgid "Description"
+msgstr "Descriere"
+
+#: view/group-list.php:42
+msgid "Add"
+msgstr "Adaugă"
+
+#: view/group-list.php:22
+msgid "Use groups to organise your redirects. Groups are assigned to a module, which affects how the redirects in that group work. If you are unsure then stick to the WordPress module."
+msgstr "Folosește grupuri pentru a-ți organiza redirecționările. Grupurile sunt atribuite unei extensii, care afectează modul în care redirecționările din acel grup funcționează. Dacă nu ești sigur, atunci lipește extensia WordPress."
+
+#: view/group-list.php:20
+msgid "Add Group"
+msgstr "Adaugă grup"
+
+#: view/group-list.php:11 view/item-list.php:10 view/log.php:11
+msgid "Search"
+msgstr "Caută"
+
+#: view/group-list.php:3 view/submenu.php:11
+msgid "Groups"
+msgstr "Grupuri"
+
+#: view/group-edit.php:21 view/item-edit.php:32 view/module-edit.php:12
+msgid "Save"
+msgstr "Salvează"
+
+#: view/add.php:46
+msgid "Add Redirection"
+msgstr "Adaugă redirecționare"
+
+#: view/add.php:36 view/item-edit.php:18
+msgid "Group"
+msgstr "Grup"
+
+#: view/add.php:28
+msgid "Regular expression"
+msgstr "Expresie uzuală"
+
+#: view/add.php:23
+msgid "Action"
+msgstr "Acțiune"
+
+#: view/add.php:17
+msgid "Match"
+msgstr "Potrivire"
+
+#: view/add.php:7
+msgid "Your redirection has been added."
+msgstr "Redirecționarea ta a fost adăugată."
+
+#: view/add.php:4
+msgid "Add new redirection"
+msgstr "Adaugă redirecționare nouă"
+
+#: redirection-admin.php:531 view/group-edit.php:22 view/item-edit.php:33
+#: view/module-edit.php:13
+msgid "Cancel"
+msgstr "Anulare"
+
+#: redirection-admin.php:530
+msgid "Download"
+msgstr "Descarcă"
+
+#: redirection-admin.php:514
+msgid "Invalid module"
+msgstr "Extensie invalidă"
+
+#: redirection-admin.php:508
+msgid "Sorry, but your redirection was not created"
+msgstr "Regret, dar redirecționarea ta nu s-a creat"
+
+#: redirection-admin.php:379 redirection-admin.php:391
+#: redirection-admin.php:418 redirection-admin.php:432
+#: redirection-admin.php:454 redirection-admin.php:466
+#: redirection-admin.php:488
+msgid "Unable to perform action"
+msgstr "Imposibil de executat acțiunea"
+
+#: redirection-admin.php:332
+msgid "Please specify a group name"
+msgstr "Te rog precizează un nume de grup"
+
+#: redirection-admin.php:329
+msgid "Your group was added successfully"
+msgstr "Grupul tău a fost adăugat cu succes"
+
+#: redirection-admin.php:295 redirection-admin.php:315
+msgid "Your logs have been deleted"
+msgstr "Jurnalele tale au fost șterse"
+
+#: redirection-admin.php:283
+msgid "No items were imported"
+msgstr "Niciun element n-a fost importat"
+
+#: redirection-admin.php:281
+msgid "%d redirection was successfully imported"
+msgid_plural "%d redirections were successfully imported"
+msgstr[0] "%d redirecționare a fost importată cu succes"
+msgstr[1] "%d redirecționări au fost importate cu succes"
+msgstr[2] "%d de redirecționări au fost importate cu succes"
+
+#: redirection-admin.php:274
+msgid "Redirection data has been deleted and the plugin disabled"
+msgstr "Datele de redirecționare au fost șterse și modulul dezactivat"
+
+#: redirection-admin.php:249 redirection-admin.php:265
+msgid "Your options were updated"
+msgstr "Opțiunile tale au fost actualizate"
+
+#. Plugin Name of the plugin/theme
+msgid "Redirection"
+msgstr "Redirecționare"
+
+#: redirection-admin.php:164
+msgid "Sorry, unable to do that. Please try refreshing the page."
+msgstr "Regret, imposibil de făcut asta. Te rog încearcă împrospătarea paginii."
+
+#: redirection-admin.php:158
+msgid "Log entries"
+msgstr "Intrări jurnal"
+
+#: redirection-admin.php:146
+msgid "Settings"
+msgstr "Setări"
+
+#: modules/wordpress.php:137
+msgid "WordPress-powered redirects. This requires no further configuration, and you can track hits."
+msgstr "Redirecționări cu sprijinul WordPress. Nu necesită nicio configurare suplimentară și poți urmări vizitele."
+
+#: modules/wordpress.php:133
+msgid "WordPress"
+msgstr "WordPress"
+
+#: modules/nginx.php:45
+msgid "For use with Nginx server. Requires manual configuration. The redirect happens without loading WordPress. No tracking of hits. This is an experimental module."
+msgstr "Pentru folosire cu server Nginx. Necesită configurare manuală. Redirecționarea se face fără încărcare WordPress. Nicio urmărire a vizitelor. Aceasta este o extensie experimentală."
+
+#: modules/nginx.php:41
+msgid "Nginx"
+msgstr "Nginx"
+
+#: modules/apache.php:112
+msgid "Uses Apache <code>.htaccess</code> files. Requires further configuration. The redirect happens without loading WordPress. No tracking of hits."
+msgstr "Folosește fișiere <code>.htaccess</code> Apache. Necesită configurare suplimentară. Redirecționarea se face fără încărcare WordPress. Nicio urmărire a vizitelor."
+
+#: modules/apache.php:108
+msgid "Apache"
+msgstr "Apache"
+
+#: modules/apache.php:102
+msgid "<code>.htaccess</code> saved to %s"
+msgstr "<code>.htaccess</code> salvat în %s"
+
+#: modules/apache.php:93
+msgid "Automatically remove or add www to your site."
+msgstr "Înlătură sau adaugă automat www la situl tău."
+
+#: modules/apache.php:90
+msgid "Add WWW (www.%s)"
+msgstr "Adaugă WWW (www.%s)"
+
+#: modules/apache.php:89
+msgid "Remove WWW (%s)"
+msgstr "Înlătură WWW (%s)"
+
+#: modules/apache.php:88
+msgid "Default server"
+msgstr "Server implicit"
+
+#: modules/apache.php:85
+msgid "Canonical URL"
+msgstr "URL canonic"
+
+#: modules/apache.php:81
+msgid "WordPress is installed in: <code>%s</code>"
+msgstr "WordPress este instalat în: <code>%s</code>"
+
+#: modules/apache.php:80
+msgid "If you want Redirection to automatically update your <code>.htaccess</code> file then enter the full path and filename here. You can also download the file and update it manually."
+msgstr "Dacă vrei ca Redirecționarea să-ți actualizeze automat fișierul <code>.htaccess</code>, atunci introdu aici calea completă și numele fișierului. De asemenea, poți descărca fișierul și să-l actualizezi manual."
+
+#: modules/apache.php:76
+msgid ".htaccess Location"
+msgstr "Locație .htaccess"
+
+#: modules/apache.php:63
+msgid "Cannot write to chosen location - check path and permissions."
+msgstr "Nu se poate scrie la locația aleasă - verifică calea și permisiunile."
+
+#: models/redirect.php:419
+msgid "Do nothing"
+msgstr "Nu face nimic"
+
+#: models/redirect.php:418
+msgid "Error (404)"
+msgstr "Eroare (404)"
+
+#: models/redirect.php:417
+msgid "Pass-through"
+msgstr "Trece prin"
+
+#: models/redirect.php:416
+msgid "Redirect to random post"
+msgstr "Redirecționează către articol aleatoriu"
+
+#: models/redirect.php:415
+msgid "Redirect to URL"
+msgstr "Redirecționează către URL"
+
+#: models/redirect.php:213
+msgid "Unable to add new redirect - delete Redirection from the options page and re-install"
+msgstr "Nu se pot adăuga redirecționări noi - șterge Redirecționare din pagina opțiuni și reinstalează"
+
+#: models/redirect.php:177
+msgid "Invalid source URL when creating redirect for given match type"
+msgstr "URL sursă invalid la crearea redirecționării pentru tipul de potrivire dat"
+
+#: models/redirect.php:174
+msgid "Invalid group when creating redirect"
+msgstr "Grup invalid la crearea redirecționării"
+
+#: models/redirect.php:166
+msgid "You can only redirect from a relative URL (<code>%s</code>) on this domain (<code>%s</code>)."
+msgstr "Poți redirecționa numai de la un URL relativ (<code>%s</code>) pe acest domeniu (<code>%s</code>)."
+
+#: models/redirect.php:160
+msgid "Source and target URL must be different"
+msgstr "Sursa și URL-ul de destinație trebuie să fie diferite"
+
+#: models/pager.php:720
+msgid "Configure"
+msgstr "Configurare"
+
+#: models/pager.php:581
+msgid "Show only this IP"
+msgstr "Arată numai acest IP"
+
+#: models/pager.php:481 models/pager.php:612
+msgid "IP"
+msgstr "IP"
+
+#: models/pager.php:479 models/pager.php:610 view/add.php:13
+#: view/item-edit.php:4
+msgid "Source URL"
+msgstr "URL sursă"
+
+#: models/pager.php:478 models/pager.php:609
+msgid "Date"
+msgstr "Dată"
+
+#: models/pager.php:441 models/pager.php:575
+msgid "Add redirect"
+msgstr "Adaugă redirecționare"
+
+#: models/pager.php:356
+msgid "All modules"
+msgstr "Toate extensiile"
+
+#: models/pager.php:279
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: models/pager.php:255
+msgid "View Redirects"
+msgstr "Vizualizare redirecționări"
+
+#: models/pager.php:245 models/pager.php:709 view/group-edit.php:8
+msgid "Module"
+msgstr "Extensie"
+
+#: models/pager.php:244 models/pager.php:710 view/submenu.php:6
+msgid "Redirects"
+msgstr "Redirecționări"
+
+#: models/pager.php:243 view/group-edit.php:4 view/group-list.php:28
+msgid "Name"
+msgstr "Nume"
+
+#: models/pager.php:164 models/pager.php:364
+msgid "Filter"
+msgstr "Filtru"
+
+#: models/pager.php:151
+msgid "No group filter"
+msgstr "Niciun filtru pentru grup"
+
+#: models/pager.php:104
+msgid "Reset Hits"
+msgstr "Resetare vizite"
+
+#: models/pager.php:61 models/pager.php:102 models/pager.php:262
+#: models/pager.php:301
+msgid "Enable"
+msgstr "Activare"
+
+#: models/pager.php:59 models/pager.php:103 models/pager.php:260
+#: models/pager.php:302
+msgid "Disable"
+msgstr "Dezactivare"
+
+#: models/pager.php:54 models/pager.php:101 models/pager.php:254
+#: models/pager.php:300 models/pager.php:498 models/pager.php:628
+#: view/options.php:111
+msgid "Delete"
+msgstr "Șterge"
+
+#: models/pager.php:53 models/pager.php:253
+msgid "Edit"
+msgstr "Editare"
+
+#: models/pager.php:31
+msgid "Last Access"
+msgstr "Ultima vizită"
+
+#: models/pager.php:30
+msgid "Hits"
+msgstr "Vizite"
+
+#: models/pager.php:29
+msgid "URL"
+msgstr "URL"
+
+#: models/pager.php:28
+msgid "Type"
+msgstr "Tip"
+
+#: models/database.php:121
+msgid "Modified Posts"
+msgstr "Articole modificate"
+
+#: models/database.php:120 models/group.php:109 view/item-list.php:3
+msgid "Redirections"
+msgstr "Redirecționări"
+
+#: matches/user-agent.php:51
+msgid "The visitor will be redirected from the source URL if the user agent matches.  You can specify a <em>matched</em> target URL as the address to send visitors if they do match, and <em>not matched</em> if they don't match.  Leaving a URL blank means that the visitor is not redirected. <strong>All matches are performed as regular expressions</strong>.\n"
+msgstr "Vizitatorul va fi redirecționat de la URL-ul sursă dacă agentul utilizator se potrivește. Poți specifica un URL de destinație <em>potrivit</em> ca adresă pentru a trimite vizitatorii dacă se potrivesc și unul <em>nepotrivit</em> dacă nu se potrivesc. Lăsând un URL necompletat înseamnă că vizitatorul nu este redirecționat. <strong>Toate potrivirile sunt executate ca expresii uzuale</strong>.\n"
+
+#: matches/user-agent.php:25
+msgid "User Agent"
+msgstr "Agent utilizator"
+
+#: matches/user-agent.php:20
+msgid "Nintendo Wii"
+msgstr "Nintendo Wii"
+
+#: matches/user-agent.php:19
+msgid "Android"
+msgstr "Android"
+
+#: matches/user-agent.php:18
+msgid "iPad"
+msgstr "iPad"
+
+#: matches/user-agent.php:17
+msgid "iPhone"
+msgstr "iPhone"
+
+#: matches/user-agent.php:16
+msgid "Safari"
+msgstr "Safari"
+
+#: matches/user-agent.php:15
+msgid "Opera"
+msgstr "Opera"
+
+#: matches/user-agent.php:14
+msgid "FireFox"
+msgstr "FireFox"
+
+#: matches/user-agent.php:13
+msgid "Internet Explorer"
+msgstr "Internet Explorer"
+
+#: matches/user-agent.php:12
+msgid "FeedBurner"
+msgstr "FeedBurner"
+
+#: matches/user-agent.php:7
+msgid "URL and user agent"
+msgstr "URL și agent utilizator"
+
+#: matches/url.php:12 view/add.php:32
+msgid "Target URL"
+msgstr "URL de destinație"
+
+#: matches/url.php:5
+msgid "URL only"
+msgstr "Numai URL"
+
+#: matches/referrer.php:56 matches/referrer.php:58 matches/user-agent.php:68
+#: matches/user-agent.php:70
+msgid "Not matched"
+msgstr "Nepotrivit"
+
+#: matches/referrer.php:46 matches/referrer.php:48 matches/user-agent.php:58
+#: matches/user-agent.php:60
+msgid "Matched"
+msgstr "Potrivit"
+
+#: matches/referrer.php:40
+msgid "The visitor will be redirected from the source URL if the referrer matches.  You can specify a <em>matched</em> target URL as the address to send visitors if they do match, and <em>not matched</em> if they don't match.  Leaving a URL blank means that the visitor is not redirected."
+msgstr "Vizitatorul va fi redirecționat de la URL-ul sursă dacă referentul se potrivește. Poți specifica un URL de destinație <em>potrivit</em> ca adresă pentru a trimite vizitatorii dacă se potrivesc și unul <em>nepotrivit</em> dacă nu se potrivesc. Lăsând un URL necompletat înseamnă că vizitatorul nu este redirecționat."
+
+#: matches/referrer.php:28 matches/referrer.php:38 matches/url.php:20
+#: matches/user-agent.php:38
+msgid "HTTP Code"
+msgstr "Cod HTTP"
+
+#: matches/referrer.php:24 view/item-edit.php:7
+msgid "Regex"
+msgstr "Expresie uzuală"
+
+#: matches/referrer.php:21 models/pager.php:480 models/pager.php:611
+msgid "Referrer"
+msgstr "Referent"
+
+#: matches/referrer.php:8
+msgid "URL and referrer"
+msgstr "URL și referent"
+
+#: matches/login.php:35 matches/login.php:37
+msgid "Logged Out"
+msgstr "Dezautentificat"
+
+#: matches/login.php:23 matches/login.php:25
+msgid "Logged In"
+msgstr "Autentificat"
+
+#: matches/login.php:16
+msgid "The target URL will be chosen from one of the following URLs, depending if the user is logged in or out.  Leaving a URL blank means that the user is not redirected."
+msgstr "URL-ul de destinație va fi ales din unul dintre următoarele URL-uri, în funcție dacă utilizatorul este autentificat sau nu. Lăsând un URL necompletat înseamnă că utilizatorul nu este redirecționat."
+
+#: matches/login.php:7
+msgid "URL and login status"
+msgstr "URL și stare autentificare"

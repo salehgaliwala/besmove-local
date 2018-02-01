@@ -1,0 +1,42 @@
+$color1: #666666;
+$color2: #333333;
+$color3: #464545;
+$color4: #999999;
+$color5: #ebebeb;
+$color6: #b3b3b3;
+$color7: #bfbfbf;
+
+$sprite: '../images/sprite-web2.png';
+
+//buttons: normal- gradient1 gradient 2 (2);hover -box shadow(1); active-gradient 1 gradient2
+//content box (8)
+//base color (3)
+//focus area line (4)
+//widgets border
+$color-pallete :
+'blue' #324c79 #2c436a #1a3056 #16294a #1e3662 #c9dbef #24447b #2a4d88 #305695 #4b7cc7,
+'dark' #3a3a3a #333333 #000000 #000000 #000000 #666666 #000000 #666666 #666666 #666666,
+'green' #17572f #144c29 #143a23 #11321e #174228 #e7ede9 #1d5031 #388456 #8eb298 #bbd4c1,
+'light' #d3d3d3 #cccccc #b3b3b3 #a8a8a8 #bebebe #f6f6f6 #999999 #f6f6f6 #cccccc #f6f6f6,
+'orange' #c14229 #b73a24 #af3621 #a42f1d #ba3d25 #ffeeea #c5523f #c74029 #cdbbb7 #eedfda,
+'purple' #4b3a5d #423352 #352645 #2e213b #3c2b4e #eeecef #51425f #82748e #998c9e #d1c4de,
+'red' #7c1922 #6d161e #630d16 #550b13 #700f19 #fbe8e4 #6e252c #a26f6e #c3a7a4 #e4cbc7,
+'teal' #20555c #1c4b51 #1a474d #163d42 #1d5057 #e7f1f2 #21676f #2d717a #559499 #9dc3c6;
+
+$social-icons :
+  'dr' '\2c' #ff5c93,
+  'fb' '\3d' #3569b4,
+  'gg' '\2d' #e04b35,
+  'lk' '\77' #0177b5,
+  'pt' '\6d' #cf2123,
+  'rs' '\6b' #f97e17,
+  'tw' '\71' #42b3ea,
+  'vm' '\6c' #21b7ea,
+  'yt' '\76' #de332c,
+  'is' '\45' #5280a5,
+  'xi' '\52' #00605e;
+
+$normal-size: 1em;
+$white: #fff;
+
+

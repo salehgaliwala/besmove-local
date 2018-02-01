@@ -1,0 +1,9 @@
+<div class="tve-template-item" data-id="<#= item.get('id') #>">
+	<div class="template-wrapper" data-id="<#= item.get('id') #>" data-cloud="<#= item.get('cloud') ? 1 : 0 #>" data-multi-step="<#= item.get('multi_step') ? 1 : 0 #>">
+		<div class="template-thumbnail" style="background-image: url('<#= item.get('thumbnail') #>')"></div>
+		<div class="template-name">
+			<#= item.get('name') #>
+		</div>
+		<div class="selected"></div>
+	</div>
+</div>

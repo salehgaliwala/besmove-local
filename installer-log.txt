@@ -1,0 +1,375 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.32
+* STEP-1 START @ 08:02:38
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.0.27 | SAPI: cgi-fcgi
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache
+DOC ROOT:	/home/mobibae1/public_html/besmove.com
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://www.besmove.com/installer.php
+SAFE MODE :	0
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20180201_experiencedresidentialpropert_e85528f2f173bf202094180201072023_archive.zip
+SIZE:	203.68MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 30266
+    [filename] => /home/mobibae1/public_html/besmove.com/20180201_experiencedresidentialpropert_e85528f2f173bf202094180201072023_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2018-02-01 08:02:42
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.180201080242.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 08:02:42 - RUNTIME: 4.5159 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 08:03:01
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.6.36 -- Build Server: 5.5.56
+FILE SIZE:	database.sql (94.19MB) - installer-data.sql (94.19MB)
+TIMEOUT:	5000
+MAXPACK:	33554432
+SQLMODE:	NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home/mobibae1/public_html/besmove.com/installer-data.sql]
+COLLATE RESET:	On
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	12
+QUERIES RAN:	29745
+
+create_shortcode: (0)
+cw_saved_widgets_options: (0)
+cw_widgets_options: (0)
+wp_captcha: (1)
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_cw_saved_widgets_options: (0)
+wp_cw_widgets_options: (1)
+wp_duplicator_packages: (1)
+wp_haw_mautic_form_fields: (18)
+wp_haw_mautic_forms: (5)
+wp_haw_mautic_integration_form: (3)
+wp_links: (0)
+wp_litespeed_optimizer: (0)
+wp_mondula_form_wizards: (1)
+wp_options: (749)
+wp_postmeta: (18905)
+wp_posts: (1249)
+wp_quform_entries: (7)
+wp_quform_entry_data: (14)
+wp_quform_entry_entry_labels: (0)
+wp_quform_entry_labels: (4)
+wp_quform_forms: (4)
+wp_quform_sessions: (86)
+wp_redirection_404: (1341)
+wp_redirection_groups: (2)
+wp_redirection_items: (5)
+wp_redirection_logs: (80)
+wp_smush_dir_images: (0)
+wp_tcb_api_error_log: (17)
+wp_term_relationships: (28)
+wp_term_taxonomy: (10)
+wp_termmeta: (0)
+wp_terms: (10)
+wp_tge_answers: (36)
+wp_tge_questions: (9)
+wp_tho_event_log: (227)
+wp_tho_test_items: (7)
+wp_tho_tests: (2)
+wp_tqb_event_log: (48)
+wp_tqb_results: (0)
+wp_tqb_tests: (1)
+wp_tqb_tests_items: (2)
+wp_tqb_user_answers: (52)
+wp_tqb_users: (13)
+wp_tqb_variations: (7)
+wp_tve_leads_contact_download: (0)
+wp_tve_leads_contacts: (23)
+wp_tve_leads_event_log: (598)
+wp_tve_leads_form_variations: (22)
+wp_tve_leads_group_options: (1)
+wp_tve_leads_saved_group_options: (0)
+wp_tve_leads_split_test: (0)
+wp_tve_leads_split_test_items: (0)
+wp_tve_ult_designs: (1)
+wp_tve_ult_emails: (0)
+wp_tve_ult_event_log: (0)
+wp_tve_ult_events: (0)
+wp_tve_ult_settings_campaign: (0)
+wp_tve_ult_settings_templates: (0)
+wp_tvo_activity_log: (0)
+wp_usermeta: (161)
+wp_users: (5)
+wp_xyz_ihs_short_code: (1)
+wp_yoast_seo_links: (150)
+wp_yoast_seo_meta: (137)
+wpstg0_commentmeta: (0)
+wpstg0_comments: (0)
+wpstg0_cw_saved_widgets_options: (0)
+wpstg0_cw_widgets_options: (0)
+wpstg0_haw_mautic_form_fields: (18)
+wpstg0_haw_mautic_forms: (5)
+wpstg0_haw_mautic_integration_form: (3)
+wpstg0_links: (0)
+wpstg0_litespeed_optimizer: (0)
+wpstg0_mondula_form_wizards: (1)
+wpstg0_options: (530)
+wpstg0_postmeta: (4281)
+wpstg0_posts: (307)
+wpstg0_quform_entries: (7)
+wpstg0_quform_entry_data: (14)
+wpstg0_quform_entry_entry_labels: (0)
+wpstg0_quform_entry_labels: (4)
+wpstg0_quform_forms: (4)
+wpstg0_quform_sessions: (86)
+wpstg0_tcb_api_error_log: (17)
+wpstg0_term_relationships: (9)
+wpstg0_term_taxonomy: (7)
+wpstg0_termmeta: (0)
+wpstg0_terms: (7)
+wpstg0_tge_answers: (12)
+wpstg0_tge_questions: (5)
+wpstg0_tho_event_log: (178)
+wpstg0_tho_test_items: (3)
+wpstg0_tho_tests: (1)
+wpstg0_tqb_event_log: (3)
+wpstg0_tqb_results: (2)
+wpstg0_tqb_tests: (0)
+wpstg0_tqb_tests_items: (0)
+wpstg0_tqb_user_answers: (9)
+wpstg0_tqb_users: (3)
+wpstg0_tqb_variations: (5)
+wpstg0_tve_leads_contact_download: (0)
+wpstg0_tve_leads_contacts: (0)
+wpstg0_tve_leads_event_log: (0)
+wpstg0_tve_leads_form_variations: (9)
+wpstg0_tve_leads_group_options: (0)
+wpstg0_tve_leads_saved_group_options: (0)
+wpstg0_tve_leads_split_test: (0)
+wpstg0_tve_leads_split_test_items: (0)
+wpstg0_tve_ult_designs: (1)
+wpstg0_tve_ult_emails: (0)
+wpstg0_tve_ult_event_log: (0)
+wpstg0_tve_ult_events: (0)
+wpstg0_tve_ult_settings_campaign: (0)
+wpstg0_tve_ult_settings_templates: (0)
+wpstg0_tvo_activity_log: (0)
+wpstg0_usermeta: (46)
+wpstg0_users: (2)
+
+Removed '73' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 8.9715 sec.
+STEP-2 COMPLETE @ 08:03:10 - RUNTIME: 9.4579 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 08:03:48
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+create_shortcode^ (0)
+cw_saved_widgets_options^ (0)
+cw_widgets_options^ (0)
+wp_captcha~ (1)
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_cw_saved_widgets_options^ (0)
+wp_cw_widgets_options~ (1)
+wp_duplicator_packages^ (0)
+wp_haw_mautic_form_fields~ (18)
+wp_haw_mautic_forms~ (5)
+wp_haw_mautic_integration_form~ (3)
+wp_links^ (0)
+wp_litespeed_optimizer^ (0)
+wp_mondula_form_wizards~ (1)
+wp_options~ (674)
+wp_postmeta~ (18905)
+wp_posts~ (1249)
+wp_quform_entries~ (7)
+wp_quform_entry_data~ (14)
+wp_quform_entry_entry_labels^ (0)
+wp_quform_entry_labels~ (4)
+wp_quform_forms~ (4)
+wp_quform_sessions~ (86)
+wp_redirection_404~ (1341)
+wp_redirection_groups~ (2)
+wp_redirection_items~ (5)
+wp_redirection_logs~ (80)
+wp_smush_dir_images^ (0)
+wp_tcb_api_error_log~ (17)
+wp_term_relationships~ (28)
+wp_term_taxonomy~ (10)
+wp_termmeta^ (0)
+wp_terms~ (10)
+wp_tge_answers~ (36)
+wp_tge_questions~ (9)
+wp_tho_event_log~ (227)
+wp_tho_test_items~ (7)
+wp_tho_tests~ (2)
+wp_tqb_event_log~ (48)
+wp_tqb_results^ (0)
+wp_tqb_tests~ (1)
+wp_tqb_tests_items~ (2)
+wp_tqb_user_answers~ (52)
+wp_tqb_users~ (13)
+wp_tqb_variations~ (7)
+wp_tve_leads_contact_download^ (0)
+wp_tve_leads_contacts~ (23)
+wp_tve_leads_event_log~ (598)
+wp_tve_leads_form_variations~ (22)
+wp_tve_leads_group_options~ (1)
+wp_tve_leads_saved_group_options^ (0)
+wp_tve_leads_split_test^ (0)
+wp_tve_leads_split_test_items^ (0)
+wp_tve_ult_designs~ (1)
+wp_tve_ult_emails^ (0)
+wp_tve_ult_event_log^ (0)
+wp_tve_ult_events^ (0)
+wp_tve_ult_settings_campaign^ (0)
+wp_tve_ult_settings_templates^ (0)
+wp_tvo_activity_log^ (0)
+wp_usermeta~ (161)
+wp_users~ (5)
+wp_xyz_ihs_short_code~ (1)
+wp_yoast_seo_links~ (150)
+wp_yoast_seo_meta~ (137)
+wpstg0_commentmeta^ (0)
+wpstg0_comments^ (0)
+wpstg0_cw_saved_widgets_options^ (0)
+wpstg0_cw_widgets_options^ (0)
+wpstg0_haw_mautic_form_fields~ (18)
+wpstg0_haw_mautic_forms~ (5)
+wpstg0_haw_mautic_integration_form~ (3)
+wpstg0_links^ (0)
+wpstg0_litespeed_optimizer^ (0)
+wpstg0_mondula_form_wizards~ (1)
+wpstg0_options~ (530)
+wpstg0_postmeta~ (4281)
+wpstg0_posts~ (307)
+wpstg0_quform_entries~ (7)
+wpstg0_quform_entry_data~ (14)
+wpstg0_quform_entry_entry_labels^ (0)
+wpstg0_quform_entry_labels~ (4)
+wpstg0_quform_forms~ (4)
+wpstg0_quform_sessions~ (86)
+wpstg0_tcb_api_error_log~ (17)
+wpstg0_term_relationships~ (9)
+wpstg0_term_taxonomy~ (7)
+wpstg0_termmeta^ (0)
+wpstg0_terms~ (7)
+wpstg0_tge_answers~ (12)
+wpstg0_tge_questions~ (5)
+wpstg0_tho_event_log~ (178)
+wpstg0_tho_test_items~ (3)
+wpstg0_tho_tests~ (1)
+wpstg0_tqb_event_log~ (3)
+wpstg0_tqb_results~ (2)
+wpstg0_tqb_tests^ (0)
+wpstg0_tqb_tests_items^ (0)
+wpstg0_tqb_user_answers~ (9)
+wpstg0_tqb_users~ (3)
+wpstg0_tqb_variations~ (5)
+wpstg0_tve_leads_contact_download^ (0)
+wpstg0_tve_leads_contacts^ (0)
+wpstg0_tve_leads_event_log^ (0)
+wpstg0_tve_leads_form_variations~ (9)
+wpstg0_tve_leads_group_options^ (0)
+wpstg0_tve_leads_saved_group_options^ (0)
+wpstg0_tve_leads_split_test^ (0)
+wpstg0_tve_leads_split_test_items^ (0)
+wpstg0_tve_ult_designs~ (1)
+wpstg0_tve_ult_emails^ (0)
+wpstg0_tve_ult_event_log^ (0)
+wpstg0_tve_ult_events^ (0)
+wpstg0_tve_ult_settings_campaign^ (0)
+wpstg0_tve_ult_settings_templates^ (0)
+wpstg0_tvo_activity_log^ (0)
+wpstg0_usermeta~ (46)
+wpstg0_users~ (2)
+--------------------------------------
+Search1:	'/home/admin/web/besmove.com/public_html' 
+Change1:	'/home/mobibae1/public_html/besmove.com' 
+Search2:	'\/home\/admin\/web\/besmove.com\/public_html' 
+Change2:	'\/home\/mobibae1\/public_html\/besmove.com' 
+Search3:	'%2Fhome%2Fadmin%2Fweb%2Fbesmove.com%2Fpublic_html%2F' 
+Change3:	'%2Fhome%2Fmobibae1%2Fpublic_html%2Fbesmove.com%2F' 
+Search4:	'\home\admin\web\besmove.com\public_html' 
+Change4:	'/home/mobibae1/public_html/besmove.com' 
+Search5:	'//www.besmove.com' 
+Change5:	'//www.besmove.com' 
+Search6:	'\/\/www.besmove.com' 
+Change6:	'\/\/www.besmove.com' 
+Search7:	'%2F%2Fwww.besmove.com' 
+Change7:	'%2F%2Fwww.besmove.com' 
+Search8:	'https://www.besmove.com' 
+Change8:	'http://www.besmove.com' 
+Search9:	'https:\/\/www.besmove.com' 
+Change9:	'http:\/\/www.besmove.com' 
+Search10:	'https%3A%2F%2Fwww.besmove.com' 
+Change10:	'http%3A%2F%2Fwww.besmove.com' 
+SCANNED:	Tables:119 	|	 Rows:29547 	|	 Cells:161818 
+UPDATED:	Tables:4 	|	 Rows:1446 	|	 Cells:1658 
+ERRORS:		0 
+RUNTIME:	1.983000 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+NOTICE: The wp-config.php has the following values set [WP_SITEURL, WP_HOME, WP_TEMP_DIR]. 
+Please validate these values are correct in your wp-config.php file.  See the codex link for more details: https://codex.wordpress.org/Editing_wp-config.php
+
+STEP 3 COMPLETE @ 08:03:50 - RUNTIME: 1.9892 sec.
+
+

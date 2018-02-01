@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Photos"
+msgstr "Fotografije"
+
+msgid "Cliparts"
+msgstr "Sličice"
+
+msgid "Horizontal"
+msgstr "Horizontalno"
+
+msgid "Vertical"
+msgstr "Vertikalno"
+
+msgid "Settings"
+msgstr "Postavke"
+
+msgid "Search"
+msgstr "Traži"
+
+msgid "Search for \"red roses\", \"flowers -red\", \"city OR town\", etc."
+msgstr ""
+
+msgid "All"
+msgstr "Svi"
+
+msgid "Exclude inappropriate or explicit images"
+msgstr "Vylúčiť obmedzené obrázky"
+
+msgid "Insert image credits"
+msgstr "Unesi ko je zaslužan za sliku"
+
+msgid "Pixabay Images"
+msgstr "Pixabay Images"
+
+msgid "Pixabay Images Settings"
+msgstr "Pixabay Images postavke"
+
+msgid "Language"
+msgstr "Jezik"
+
+msgid "Attribution"
+msgstr "Atribucija"
+
+msgid "Button"
+msgstr "Taster"
+
+msgid "Show Pixabay button next to \"Add Media\""
+msgstr "Prikaži Pixabay taster pored  \"Dodaj medije\""
+
+msgid "Search for \"red roses\", \"flowers -red\", etc."
+msgstr ""

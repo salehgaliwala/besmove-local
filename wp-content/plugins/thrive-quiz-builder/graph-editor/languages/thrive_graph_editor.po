@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: thrive-graph-editor 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-24 14:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/classes/class-tge-ajax-controller.php:81
+msgid "Invalid request."
+msgstr ""
+
+#: includes/classes/class-tge-ajax-controller.php:90
+#, php-format
+msgid "Method %s not implemented"
+msgstr ""
+
+#: includes/classes/class-tge-ajax-controller.php:124
+msgid "Question actions cannot be performed without quiz_id"
+msgstr ""
+
+#: includes/classes/class-tge-ajax-controller.php:134
+msgid "Question could not be saved"
+msgstr ""
+
+#: includes/classes/class-tge-ajax-controller.php:145
+msgid "No action could be executed on question route"
+msgstr ""
+
+#: includes/classes/class-tge-ajax-controller.php:156
+#: includes/classes/class-tge-ajax-controller.php:169
+msgid "No action could be executed on connection route"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:187
+msgid "Edit description"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:188
+msgid "Add description"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:189
+msgid ""
+"You cannot add a new answer as long as there are answers without image added."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:190
+msgid ""
+"You cannot add a new answer as long as there are answers without text added."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:191
+msgid "Please select question type"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:192
+msgid "Quiz Start"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:193
+msgid "Question text is required"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:194
+msgid "Answer text required"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:195
+msgid "Answer points required"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:196
+msgid "Answer weight required"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:197
+msgid "Answer points must be a number"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:198
+msgid "Answer weight must be a number"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:199
+msgid "The input must be an integer with max 6 digits."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:200
+msgid "There are some invalid answers"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:201
+msgid "A question needs at least 1 answer"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:202
+msgid "Answer image is mandatory"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:203
+msgid "Question has been deleted"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:204
+msgid "Question could not be deleted"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:205
+msgid "Please select category"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:206
+msgid "Saving..."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:207
+msgid "Changes saved"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:208
+#: includes/templates/control-panel.php:39
+msgid "All your changes are auto saved"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:209
+msgid "Change Question Type"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:210
+msgid "Edit question"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:211 includes/layouts/editor.php:46
+msgid "Minimize"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:212
+msgid "Maximize"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:213
+msgid "Disable attaching tags to answers."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:214
+msgid "Enable attaching tags to answers."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:215
+#, php-format
+msgid ""
+"Attaching tags to answers is now enabled. If your API connection supports "
+"it, %s these tags can be sent to your mailing list. For more details %s"
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:215
+msgid "check this tutorial."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:216
+msgid ""
+"Attaching tags to answers is now disabled but the settings are saved for "
+"later use."
+msgstr ""
+
+#: includes/classes/class-tge-editor.php:218
+msgid "Select image for your question"
+msgstr ""
+
+#: includes/classes/class-tge-question-manager.php:236
+msgid "Multiple Choice with Buttons"
+msgstr ""
+
+#: includes/classes/class-tge-question-manager.php:241
+msgid "Multiple Choice with Images"
+msgstr ""
+
+#: includes/layouts/editor.php:37
+#: includes/templates/backbone/modals/add-question.phtml:27
+msgid "Add Question"
+msgstr ""
+
+#: includes/layouts/editor.php:45
+msgid "Navigator"
+msgstr ""
+
+#: includes/templates/control-panel.php:20
+msgid "Your Questions"
+msgstr ""
+
+#: includes/templates/control-panel.php:30
+msgid "Save & Exit"
+msgstr ""
+
+#: includes/templates/control-panel.php:37
+msgid "Every change you make is automatically saved."
+msgstr ""
+
+#: includes/templates/backbone/answer/form/button.phtml:14
+msgid "Answer"
+msgstr ""
+
+#: includes/templates/backbone/answer/form/image.phtml:19
+msgid "Optional description"
+msgstr ""
+
+#: includes/templates/backbone/answer/form/right_wrong.phtml:4
+msgid "Correct answer"
+msgstr ""
+
+#: includes/templates/backbone/answer/tags.phtml:3
+msgid "Tags"
+msgstr ""
+
+#: includes/templates/backbone/answer/tags.phtml:8
+msgid "Visitors who choose this answer will be assigned the following tags."
+msgstr ""
+
+#: includes/templates/backbone/answer/tags.phtml:14
+msgid "Add your tags here"
+msgstr ""
+
+#: includes/templates/backbone/image/answer.phtml:7
+#: includes/templates/backbone/image/form.phtml:7
+msgid "Add Image"
+msgstr ""
+
+#: includes/templates/backbone/image/answer.phtml:11
+#: includes/templates/backbone/image/form.phtml:14
+msgid "Change<br/>Image"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:3
+msgid "Select question type"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:4
+msgid "Select question type:"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:12
+#: includes/templates/backbone/modals/delete-question.phtml:10
+msgid "Cancel"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:18
+msgid "Continue"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:35
+msgid "Back"
+msgstr ""
+
+#: includes/templates/backbone/modals/add-question.phtml:41
+msgid "Save"
+msgstr ""
+
+#: includes/templates/backbone/modals/delete-question.phtml:2
+msgid "Delete Question"
+msgstr ""
+
+#: includes/templates/backbone/modals/delete-question.phtml:4
+msgid ""
+"Are you sure that you want to remove this question? It will be permanently "
+"removed."
+msgstr ""
+
+#: includes/templates/backbone/modals/delete-question.phtml:14
+msgid "Delete"
+msgstr ""
+
+#: includes/templates/backbone/question/form.phtml:10
+msgid "Question text"
+msgstr ""
+
+#: includes/templates/backbone/question/form.phtml:18
+msgid "Add Description"
+msgstr ""
+
+#: includes/templates/backbone/question/form.phtml:41
+msgid "New Answer"
+msgstr ""
+
+#: includes/templates/backbone/question/points_switcher.phtml:3
+msgid "Weights"
+msgstr ""
+
+#: includes/templates/backbone/quiz/responses.phtml:3
+msgid "None"
+msgstr ""
+
+#: database/class-tge-database-manager.php:188
+#, php-format
+msgid ""
+"There was an error while updating the database tables needed by Thrive "
+"Question Editor. Detailed error message: %s. If you continue seeing this "
+"message, please contact %s"
+msgstr ""
+
+#: database/class-tge-database-manager.php:190
+msgid "Thrive Themes Support"
+msgstr ""

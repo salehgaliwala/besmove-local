@@ -1,0 +1,15 @@
+<div class="tve-template-item" data-id="<#= item.get('id') #>">
+	<div class="template-wrapper" data-id="<#= item.get('id') #>" data-cloud="<#= item.get('cloud') ? 1 : 0 #>" data-multi-step="<#= item.get('multi_step') ? 1 : 0 #>">
+		<div class="template-thumbnail" style="background-image: url('<#= item.get('thumbnail') #>')">
+			<div class="template-thumbnail-overlay">
+				<div class="tcb-right margin-right-5 tcb-delete-saved-template click" data-fn="delete_confirmation">
+					<?php tcb_icon( 'trash', false ); ?>
+				</div>
+			</div>
+		</div>
+		<div class="template-name">
+			<#= item.get('name') #>
+		</div>
+		<div class="selected"></div>
+	</div>
+</div>

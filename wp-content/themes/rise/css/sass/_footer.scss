@@ -1,0 +1,177 @@
+@import "bourbon";
+
+footer {
+  @include linear-gradient($seventh-color 0%, $eight-color 100%);
+  color: $white;
+  .fmw {
+    padding: 60px 0 30px;
+  }
+  .fmm {
+    background: $ninth-color;
+    padding: 20px 0;
+    .wrp {
+      display: table;
+    }
+    .ft-c {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+    .ft-s {
+      @include clearfix();
+      display: table-cell;
+      vertical-align: bottom;
+      text-align: right;
+      > span {
+        @include roboto();
+        color: $sixth-color;
+        display: block;
+        font-size: .833em;
+        font-weight: 300;
+        margin-top: 7px;
+        float: left;
+      }
+      ul {
+        @include clearfix();
+        float: left;
+        list-style-type: none;
+        li {
+          float: left;
+        }
+      }
+    }
+    p {
+      @include roboto();
+      color: $sixth-color;
+      font-size: .833em;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fmw {
+  section {
+    margin-bottom: 30px;
+    .ttl {
+      position: relative;
+      padding: 0;
+      span {
+        background: rgba($white, .05);
+        color: #e3e2e2;
+        display: inline-block;
+        padding: 5px 15px;
+      }
+      &:after {
+        background: rgba($white, .05);
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+      }
+    }
+  }
+}
+.ft-s {
+  li {
+    a {
+      display: block;
+      height: 30px;
+      width: 30px;
+      &:before {
+        @include rise-font();
+        border-radius: 50%;
+        color: $white;
+        display: block;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 30px;
+      }
+    }
+    &.tw {
+      a {
+        &:before {
+          content: '\71';
+        }
+      }
+    }
+    &.fb {
+      a {
+        &:before {
+          content: '\3d';
+        }
+      }
+    }
+    &.gg {
+      a {
+        &:before {
+          content: '\2d';
+        }
+      }
+    }
+    &.lk {
+      a {
+        &:before {
+          content: '\77';
+        }
+      }
+    }
+    &.rs {
+      a {
+        &:before {
+          content: '\6b';
+        }
+      }
+    }
+    &.pt {
+      a {
+        &:before {
+          content: '\6d';
+        }
+      }
+    }
+    &.yt {
+      a {
+        &:before {
+          content: '\76';
+        }
+      }
+    }
+    &:hover {
+      a {
+        &:before {
+          background: $main-color;
+        }
+      }
+    }
+  }
+}
+.ft-m {
+  ul {
+    @include clearfix();
+    list-style-type: none;
+    li {
+      display: inline;
+      font-size: 14px;
+      font-weight: 300;
+      &:hover {
+        a {
+          color: #fff;
+        }
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:after {
+        content: '|';
+        padding: 0 5px;
+      }
+    }
+  }
+}

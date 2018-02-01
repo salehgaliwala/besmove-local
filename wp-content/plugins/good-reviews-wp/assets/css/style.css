@@ -1,0 +1,106 @@
+/* Frontend CSS Stylesheet for Good Reviews for WordPress */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	left: -2000px;
+}
+.screen-reader-text:focus {
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #000;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+}
+
+.gr-review {
+	margin: 1em 0 4em;
+	font-style: normal;
+}
+
+.gr-content {
+	position: relative;
+}
+
+.gr-rating-numbers {
+	font-size: 2em;
+}
+
+.gr-review-body {
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+.gr-review-body em {
+	font-style: normal;
+}
+
+.gr-review-date {
+	display: block;
+	font-size: 85%;
+	opacity: 0.7;
+}
+
+.gr-review-url {
+	display: block;
+	margin-top: 1em;
+}
+
+.gr-author {
+	display: block;
+	margin-top: 1em;
+	text-align: right;
+}
+
+.gr-author-affiliate {
+	font-size: .85em;
+}
+
+.gr-item-has-image .gr-author:before,
+.gr-item-has-image .gr-author:after {
+	content: " ";
+	display: table;
+}
+
+.gr-item-has-image .gr-author:after {
+	clear: both;
+}
+
+.gr-item-has-image .gr-author-text {
+	float: left;
+	width: 75%;
+}
+
+.gr-item-has-image .gr-author-name,
+.gr-item-has-image .gr-author-affiliation {
+	padding-right: 1em;
+}
+
+.gr-item-has-image .gr-author-img {
+	float: right;
+	width: 25%;
+}
+				
+.gr-item-has-image .gr-author-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* Hide cycled reviews on load */
+.gr-reviews-cycle .gr-review {
+	display: none;
+}

@@ -1,0 +1,218 @@
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+@mixin responsivebackground {
+  @media only screen and (max-width: 1300px) {
+    .wrp {
+      background: red;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    .wrp {
+      background: yellow;
+    }
+  }
+  @media only screen and (max-width: 940px) {
+    .wrp {
+      background: blue;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .wrp {
+      background: green;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .wrp {
+      background: pink;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .wrp {
+      background: purple;
+    }
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+@mixin cover-background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin robotocondensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@mixin opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin rise-font {
+  font-family: 'rise-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin animation-duration($time) {
+  animation-duration: $time;
+  -webkit-animation-duration: $time;
+}
+
+@mixin animation-timing-function($function-name) {
+  animation-timing-function: $function-name;
+  -webkit-animation-timing-function: $function-name;
+}
+
+@mixin animation-name($keyframe-name) {
+  animation-name: $keyframe-name;
+  -webkit-animation-name: $keyframe-name;
+}
+
+@mixin animation-iteration-count($animation-iteration) {
+  animation-iteration-count: $animation-iteration;
+  -webkit-animation-iteration-count: $animation-iteration;
+}
+
+@mixin animation-fill-mode($animation-fill) {
+  animation-fill-mode: $animation-fill;
+  -webkit-animation-fill-mode: $animation-fill;
+}
+@mixin animation-play-state($animation-state) {
+  animation-play-state: $animation-state;
+  -webkit-animation-play-state: $animation-state;
+}
+@mixin animation-play-direction($animation-direction) {
+  -webkit-animation-direction: $animation-direction;
+  animation-direction: $animation-direction;
+}
+
+@keyframes side-menu {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes side-menu {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes progress-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progress-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fill-counter {
+  from {
+    border-width: 0%;
+  }
+  to {
+    border-width: inherit;
+  }
+}
+
+@-webkit-keyframes fill-counter {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@mixin setGalleryWidths($containerWidth, $className, $startNo, $endNo, $defaultWidth) {
+  @for $i from $startNo through $endNo {
+    .#{$className} .gallery-columns-#{$i} {
+      .gallery-item {
+        $size: $containerWidth / $i;
+        $gridWidth: 100% / $i;
+        width: $gridWidth !important;
+        @if $defaultWidth == true and $size < 90px {
+          dt {
+            a {
+              height: 120px !important;
+              width: 120px !important;
+            }
+          }
+        }
+        dt {
+          a {
+            height: $size;
+            width: $size;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin trans-prefix($value, $prefix: "") {
+  $slice: str-slice(inspect($value), 0, 9);
+  @if $slice == "transform" {
+    #{$prefix}transition: #{$prefix}#{$value};
+  } @else {
+    #{$prefix}transition: $value;
+  }
+}
+@mixin tve-transition($properties...) {
+  $spec: '';
+  @if length($properties) > 1 {
+    $spec:              ();
+    @for $i from 1 through length($properties) {
+      $spec:            append($spec, nth($properties, $i), comma);
+    }
+  } @else {
+    $spec:              $properties;
+  }
+  @include trans-prefix($spec, -webkit-);
+  @include trans-prefix($spec, -moz-);
+  @include trans-prefix($spec);
+}

@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Photos"
+msgstr "Fotos"
+
+msgid "Cliparts"
+msgstr "Imágenes prediseñadas"
+
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgid "Vertical"
+msgstr "Vertical"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search for \"red roses\", \"flowers -red\", \"city OR town\", etc."
+msgstr ""
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Exclude inappropriate or explicit images"
+msgstr "Filtrar resultados explícitos"
+
+msgid "Insert image credits"
+msgstr "Inserte créditos de imagen"
+
+msgid "Pixabay Images"
+msgstr "Pixabay Imágenes"
+
+msgid "Pixabay Images Settings"
+msgstr "Pixabay Imágenes Configuración"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Attribution"
+msgstr "Atribución"
+
+msgid "Button"
+msgstr "Botón"
+
+msgid "Show Pixabay button next to \"Add Media\""
+msgstr "Mostre botón Pixabay lado de \"Añadir objeto\""
+
+msgid "Search for \"red roses\", \"flowers -red\", etc."
+msgstr ""

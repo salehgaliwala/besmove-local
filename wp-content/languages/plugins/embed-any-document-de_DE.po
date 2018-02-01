@@ -1,0 +1,242 @@
+# Translation of Plugins - Embed Any Document - Development (trunk) in German
+# This file is distributed under the same license as the Plugins - Embed Any Document - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-05-21 19:09:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Embed Any Document - Development (trunk)\n"
+
+#: inc/settings.php:86
+msgid "Quick Help"
+msgstr "Schnelle Hilfe"
+
+#: inc/settings.php:64
+msgid "Github"
+msgstr "Github"
+
+#: inc/settings.php:63
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/settings.php:62
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/settings.php:59
+msgid "Designed and developed by"
+msgstr "Designed and developed by"
+
+#: awsm-embed.php:254
+msgid "Embedded Document"
+msgstr "Eingebettetes Dokument"
+
+#: awsm-embed.php:164
+msgid "Select"
+msgstr "Wähle"
+
+#: inc/settings.php:10
+msgid "General Settings"
+msgstr "Haupteinstellungen"
+
+#: inc/popup.php:74
+msgid "Drive"
+msgstr "Drive"
+
+#: inc/popup.php:73
+msgid "Box"
+msgstr "Box"
+
+#: inc/popup.php:60 inc/settings.php:38
+msgid "Download Text"
+msgstr "Download-Text"
+
+#: inc/popup.php:30
+msgid "back"
+msgstr "zurück"
+
+#: inc/popup.php:6
+msgid "Close"
+msgstr "Geschlossen"
+
+#: awsm-embed.php:330
+msgid "Add From %1$s"
+msgstr "Hinzufügen von %1$s"
+
+#: awsm-embed.php:163
+msgid "From URL"
+msgstr "Von URL"
+
+#. Author URI of the plugin/theme
+msgid "http://awsm.in"
+msgstr "http://awsm.in"
+
+#. Author of the plugin/theme
+msgid "Awsm Innovations"
+msgstr "Awsm Innovations"
+
+#. Description of the plugin/theme
+msgid "Embed Any Document WordPress plugin lets you upload and embed your documents easily in your WordPress website without any additional browser plugins like Flash or Acrobat reader. The plugin lets you choose between Google Docs Viewer and Microsoft Office Online to display your documents."
+msgstr "Das Embed Any Document WordPress Plugin ermöglicht es dir, deine Dokumente einfach in deine WordPress Website einzufügen, ohne zusätzliche Browser Plugins wie Flash oder Acrobat Reader. Das Plugin ermöglicht die Wahl zwischen Google Docs Viewer und Microsoft Office Online, um deine Dokumente anzuzeigen."
+
+#. Plugin URI of the plugin/theme
+msgid "http://awsm.in/embed-any-documents"
+msgstr "http://awsm.in/embed-any-documents"
+
+#. #-#-#-#-#  embed-any-document-code.pot (Embed Any Document 2.3.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: awsm-embed.php:269
+msgid "Embed Any Document"
+msgstr "Embed Any Document"
+
+#: inc/settings.php:104 inc/settings.php:105
+msgid "FAQs"
+msgstr "FAQ"
+
+#: inc/settings.php:99 inc/settings.php:100
+msgid "Shortcode & Attributes"
+msgstr "Shortcode & Attribute"
+
+#: inc/settings.php:94 inc/settings.php:95
+msgid "About Viewers"
+msgstr "Über Viewer"
+
+#: inc/settings.php:89 inc/settings.php:90
+msgid "How to Embed Documents?"
+msgstr "Wie füge ich ein Dokument ein?"
+
+#: inc/settings.php:79
+msgid "Open a Ticket"
+msgstr "Öffne ein Ticket"
+
+#: inc/settings.php:79
+msgid "Need Help?"
+msgstr "Benötigst du Hilfe?"
+
+#: inc/settings.php:73
+msgid "Rate Now!"
+msgstr "Bewerte es jetzt!"
+
+#: inc/settings.php:73
+msgid "Like the plugin?"
+msgstr "Dir gefällt das Plugin?"
+
+#: inc/settings.php:25
+msgid "Enter values in pixels or percentage (Example: 500px or 100%)"
+msgstr "Gib Werte in Pixeln oder Prozent an (Beispiel: 500px oder 100%)"
+
+#: inc/popup.php:49 inc/settings.php:21
+msgid "Height"
+msgstr "Höhe"
+
+#: inc/popup.php:46 inc/settings.php:17
+msgid "Width"
+msgstr "Breite"
+
+#: inc/settings.php:15
+msgid "Default Size"
+msgstr "Standardgröße"
+
+#: inc/popup.php:94
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: inc/popup.php:90
+msgid "Loading..."
+msgstr "Lädt..."
+
+#: inc/popup.php:90
+msgid "Insert"
+msgstr "Einfügen"
+
+#: inc/popup.php:81
+msgid "Shortcode Preview"
+msgstr "Shortcode-Voransicht"
+
+#: inc/popup.php:66
+msgid "Microsoft Office Online"
+msgstr "Microsoft Office Online"
+
+#: inc/popup.php:66
+msgid "Google Docs Viewer"
+msgstr "Google Docs Viewer"
+
+#: inc/popup.php:64 inc/popup.php:71
+msgid "Viewer"
+msgstr "Viewer"
+
+#: inc/popup.php:55 inc/settings.php:32
+msgid "No Download"
+msgstr "Kein Download"
+
+#: inc/popup.php:55 inc/settings.php:32
+msgid "For Logged-in users"
+msgstr "Für angemeldete Benutzer"
+
+#: inc/popup.php:55 inc/settings.php:32
+msgid "For all users"
+msgstr "Für alle Benutzer"
+
+#: inc/popup.php:53 inc/settings.php:29
+msgid "Show Download Link"
+msgstr "Zeige Download-Link"
+
+#: inc/popup.php:43
+msgid "Advanced Options"
+msgstr "Erweiterte Optionen"
+
+#: inc/popup.php:26
+msgid "Enter document URL"
+msgstr "URL des Dokuments eingeben"
+
+#: inc/popup.php:19
+msgid "Add from URL"
+msgstr "Hinzufügen von URL"
+
+#: inc/popup.php:16
+msgid "Upload Document"
+msgstr "Dokument hochladen"
+
+#: awsm-embed.php:328
+msgid "Buy Pro Version"
+msgstr "Pro Version kaufen"
+
+#: awsm-embed.php:277
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Du hast nicht die erforderlichen Rechte, um auf diese Seite zuzugreifen."
+
+#: awsm-embed.php:258
+msgid "No Url Found"
+msgstr "Keine URL gefunden"
+
+#: awsm-embed.php:153 awsm-embed.php:180
+msgid "Download"
+msgstr "Download"
+
+#: awsm-embed.php:162
+msgid "Verifying..."
+msgstr "Prüfen..."
+
+#: awsm-embed.php:161 inc/popup.php:28
+msgid "Add URL"
+msgstr "URL hinzufügen"
+
+#: awsm-embed.php:160
+msgid "Invalid URL"
+msgstr "Ungültige URL"
+
+#: awsm-embed.php:159
+msgid "Nothing to insert"
+msgstr "Nichts einzufügen"
+
+#: awsm-embed.php:125
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: awsm-embed.php:98 inc/popup.php:8
+msgid "Add Document"
+msgstr "Dokument hinzufügen"

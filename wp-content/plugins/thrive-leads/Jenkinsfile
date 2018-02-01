@@ -1,0 +1,132 @@
+pipeline {
+    agent any
+    parameters {
+        string(defaultValue: 'thrive-leads', description: 'GitHub Slug for product', name: 'PRODUCT', trim: true)
+        string(defaultValue: 'radu/jenkins-pipeline', description: 'GitHub branch to build', name: 'BRANCH', trim: true)
+        booleanParam(defaultValue: false, description: 'Build Thrive Architect or use the latest available build', name: 'BUILD_TCB')
+        string(defaultValue: 'dev', description: 'Thrive Architect branch to use', name: 'TCB_BRANCH', trim: true)
+        booleanParam(defaultValue: false, description: 'Build Thrive Dashboard or use the latest available build', name: 'BUILD_DASHBOARD')
+        string(defaultValue: 'dev', description: 'GitHub branch to build DASHBOARD from', name: 'DASHBOARD_BRANCH', trim: true)
+        string(defaultValue: '', description: 'Enter the desired git tag to be created (release builds). If left empty no tag will be created (dev builds).', name: 'TAG_NAME', trim: true)
+        string(defaultValue: '', description: 'Upload Plugin to dev site. Will be uploaded to DEV_SITE.thrive-dev.bitstoneint.com', name: 'DEV_SITE', trim: true)
+        booleanParam(defaultValue: false, description: 'Upload to http://staging.thrive-dev.bitstoneint.com and http://thrive-dev-php52.bitstoneint.com:8098 ?', name: 'STAGING_UPLOAD')
+    }
+    environment {
+        ARCHITECT_JOB = 'Thrive Architect Build'
+        INCLUDE_DASHBOARD = true
+        INCLUDE_TCB = true
+        ZIP_NAME = params.PRODUCT
+        GIT = credentials('7df2068a-ea59-4a10-9100-2c62d083bd8a')
+        DASHBOARD_JOB = 'Thrive Dashboard build - PIPELINE'
+    }
+
+    stages {
+        stage('Setup') {
+            steps {
+                sh "rm -rf ${env.ZIP_NAME}*"
+                sh "mv thrive-plugin ${env.ZIP_NAME}"
+            }
+        }
+        stage('Parallel Builders') {
+            failFast true
+            parallel {
+                stage('dashboard-build') {
+                    when {
+                        expression { return params.BUILD_DASHBOARD }
+                    }
+                    steps {
+                        build job: env.DASHBOARD_JOB, parameters: [string(name: 'BRANCH', value: params.DASHBOARD_BRANCH)]
+                    }
+                }
+                stage('tcb-build') {
+                    when {
+                        expression { return env.INCLUDE_TCB && params.BUILD_TCB }
+                    }
+                    steps {
+                        build job: env.ARCHITECT_JOB, parameters[
+                            string(name: 'BRANCH', value: params.TCB_BRANCH)
+                            string(name: 'LIGHTWEIGHT', value: true)
+                        ]
+                    }
+                }
+            }
+        }
+        stage('Copy dependencies') {
+            failFast true
+            parallel {
+                stage('copy-dashboard') {
+                    when {
+                        expression { return env.INCLUDE_DASHBOARD }
+                    }
+                    steps {
+                        dir(ZIP_NAME) {
+                            step([
+                                $class: 'CopyArtifact',
+                                filter: 'thrive-dashboard.zip',
+                                fingerprintArtifacts: true,
+                                projectName: DASHBOARD_JOB,
+                                selector: [$class: 'StatusBuildSelector', stable: false]
+                            ])
+                            sh 'rm -rf thrive-dashboard'
+                            sh 'unzip thrive-dashboard.zip'
+                            sh 'rm -rf thrive-dashboard.zip'
+                        }
+                    }
+                }
+                stage('copy-thrive-architect') {
+                    when {
+                        expression { return env.INCLUDE_TCB }
+                    }
+                    steps {
+                        dir(ZIP_NAME) {
+                            step([
+                                $class: 'CopyArtifact',
+                                filter: 'thrive-visual-editor.zip',
+                                fingerprintArtifacts: true,
+                                projectName: DASHBOARD_JOB,
+                                selector: [$class: 'StatusBuildSelector', stable: false]
+                            ])
+                            sh 'rm -rf thrive-visual-editor tcb'
+                            sh 'unzip thrive-visual-editor.zip'
+                            sh 'rm -rf thrive-visual-editor.zip'
+                            sh 'mv thrive-visual-editor tcb'
+                        }
+                    }
+                }
+            }
+        }
+        stage('grunt-parallel-publish') {
+            failFast true
+            parallel {
+                stage('grunt') {
+                    steps {
+                        dir(ZIP_NAME) {
+                            sh 'rm -rf node_modules'
+                            sh 'ln -s /var/lib/global_node_modules/node_modules/ node_modules'
+                            sh 'grunt --release --zip'
+                        }
+                    }
+                }
+                stage('publish') {
+                    when {
+                        expression { return params.TAG_NAME != '' }
+                    }
+                    steps {
+                        dir(ZIP_NAME) {
+                            sh "git tag -a -f -m \"Release version ${params.TAG_NAME}\" ${params.TAG_NAME}"
+                            sh "git push https://${env.GIT_USR}:${env.GIT_PSW}@github.com/ThriveThemes/${params.PRODUCT} :${params.TAG_NAME} || echo \"Remote tag does not exist\""
+                            sh "git push https://${env.GIT_USR}:${env.GIT_PSW}@github.com/ThriveThemes/${params.PRODUCT} ${params.TAG_NAME}"
+                        }
+                    }
+                }
+            }
+        }
+    }
+    post {
+        success {
+            archiveArtifacts artifacts: "${env.ZIP_NAME}.zip"
+            echo 'Build successful'
+            sh "rm -rf ${ZIP_NAME}*"
+        }
+    }
+}

@@ -1,0 +1,377 @@
+@import "bourbon";
+
+$experimental-support-for-svg: true;
+@import url('//fonts.googleapis.com/css?family=Roboto:100,400,300,500,700,300italic&subset=latin,latin-ext');
+@import url('//fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:600&subset=latin,latin-ext');
+@import "_variables";
+@import "_mixins";
+
+@font-face {
+  //  font-family: 'pressive_font';
+  //  src:url('../fonts/pressive_font.eot?ia4ttx');
+  //  src:url('../fonts/pressive_font.eot?#iefixia4ttx') format('embedded-opentype'),
+  //  url('../fonts/pressive_font.woff?ia4ttx') format('woff'),
+  //  url('../fonts/pressive_font.ttf?ia4ttx') format('truetype'),
+  //  url('../fonts/pressive_font.svg?ia4ttx#pressive_font') format('svg');
+  //  font-weight: normal;
+  //  font-style: normal;
+}
+
+/*
+  buttons here
+*/
+@each $color in $color-pallete {
+  .btn.#{nth($color, 1)} {
+    @include linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%);
+    &:hover {
+      box-shadow: 0 -2px 0 0 nth($color, 4) inset;
+      background: nth($color, 3);
+    }
+    &:active {
+      @include linear-gradient(nth($color, 5) 0%, nth($color, 6) 100%);
+    }
+  }
+  .fat.#{nth($color, 1)} {
+    background-color: nth($color, 8);
+  }
+  .fab.#{nth($color, 1)} {
+    &.f1 {
+      background: nth($color, 8);
+      .fr {
+        border-left: 4px solid nth($color, 9);
+      }
+    }
+    &.f2 {
+      background: nth($color, 8);
+      h3 {
+        border-bottom: 4px solid nth($color, 9);
+      }
+    }
+    &.f3 {
+      border: 5px solid nth($color, 7);
+      h3 {
+        color: nth($color, 8);
+      }
+      .fl {
+        border-right: 1px solid nth($color, 7);
+      }
+    }
+    &.f4 {
+      border: 5px solid nth($color, 7);
+      .fl {
+        border-right: 1px solid nth($color, 7);
+      }
+      .frm {
+        background: nth($color, 7);
+      }
+    }
+  }
+}
+
+.btn {
+  @include roboto();
+  box-shadow: 0 -1px 2px 0 rgba(#010101, .3) inset;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  &:active {
+    box-shadow: none;
+  }
+  .bSe &, .sAs & {
+    color: $white;
+    &.light {
+      color: $color2;
+    }
+  }
+  > span {
+    display: block;
+  }
+  span, input[type="submit"], button {
+    color: inherit;
+  }
+  &.small {
+    border-radius: 5px;
+    font-size: .944em;
+    > span, input[type="submit"], button {
+      padding: 12px 25px;
+    }
+  }
+  &.medium {
+    border-radius: 7px;
+    font-size: 1.333em;
+    > span, input[type="submit"], button {
+      padding: 18px 30px;
+    }
+  }
+  &.big {
+    border-radius: 9px;
+    font-size: 1.389em;
+    > span, input[type="submit"], button {
+      padding: 24px 40px;
+    }
+  }
+  &.full {
+    width: 100%;
+  }
+  &.aligncenter {
+    display: table;
+    margin: 0 auto 15px auto;
+  }
+  input[type="submit"], button {
+    @include roboto();
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+
+/*
+  common
+*/
+.far {
+  .op-r {
+    float: left;
+  }
+  .frm {
+    @include clearfix();
+    &.i1 {
+      input[type="text"], .op-r {
+        width: 53%;
+      }
+      .btn {
+        width: 45%;
+      }
+    }
+    &.i2 {
+      input[type="text"], .op-r {
+        width: 35%;
+      }
+      .btn {
+        width: 26%;
+      }
+    }
+    &.i3 {
+      input[type="text"], .op-r {
+        width: 24%;
+      }
+      .btn {
+        width: 22%;
+      }
+    }
+    &.i4 {
+      input[type="text"], .op-r {
+        margin-bottom: 20px;
+        width: 38%;
+      }
+      .btn {
+        width: 20%;
+      }
+    }
+    .btn {
+      margin-bottom: 0;
+    }
+    input[type='text'], .btn {
+      float: left;
+    }
+    input[type="text"] {
+      @include transition(all, .3s, ease-in-out);
+      @include roboto();
+      box-sizing: border-box;
+      background: $white;
+      border: 0;
+      color: $color4;
+      font-weight: 300;
+      font-size: 16px;
+      margin-right: 2%;
+      padding: 15px 10px;
+      &:hover, &:focus {
+        box-shadow: 0 0 1px 1px rgba(#000, .4) inset;
+        color: #000;
+      }
+    }
+    input[type="submit"] {
+      background: none;
+      border: 0;
+      padding: 14px 25px;
+    }
+  }
+}
+
+/*
+  top focus areas
+*/
+.fat {
+  @include cover-background();
+  .fab-i {
+    box-sizing: border-box;
+    display: table;
+    padding: 30px 0;
+    width: 100%;
+    .fl, .fr, .fm {
+      display: table-cell;
+    }
+  }
+  img {
+    max-width: 300px;
+  }
+  h3, p {
+    color: $white;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .fl {
+    padding-right: 30px;
+  }
+  &.f1 {
+    .fl, .fr {
+      vertical-align: bottom;
+    }
+    .fm {
+      padding-right: 30px;
+      vertical-align: middle;
+    }
+  }
+  &.f2 {
+    .fl, .fm {
+      vertical-align: bottom;
+    }
+    .frm {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+/*
+  bottom focus areas
+*/
+.fab {
+  margin-bottom: 20px;
+  img {
+    max-width: 200px;
+  }
+  .fab-i {
+    box-sizing: border-box;
+    display: table;
+    padding: 30px 20px;
+    width: 100%;
+    .fl, .fr {
+      display: table-cell;
+    }
+    h3 {
+      font-size: 1.944em;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+  &.f1, &.f2 {
+    box-shadow: 0 0 5px 0 rgba(#000, .3);
+    border: 6px solid $white;
+    .fab-i {
+      box-shadow: 0 0 5px 0 rgba(#000, .3) inset;
+    }
+    h3, p {
+      color: $white;
+    }
+  }
+  &.f1 {
+    .fl {
+      padding-right: 20px;
+    }
+    .fr {
+      min-width: 30%;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  &.f2 {
+    h3 {
+      padding-bottom: 15px;
+    }
+  }
+  &.f3, &.f4 {
+    background: $white;
+    .fl {
+      min-width: 20%;
+      padding-right: 20px;
+      text-align: center;
+      vertical-align: top;
+    }
+    .fr {
+      padding-left: 20px;
+    }
+  }
+  &.f3 {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  &.f4 {
+    p {
+      margin-bottom: 10px;
+    }
+    .frm {
+      padding: 20px;
+    }
+  }
+}
+
+#poststuff {
+  .far {
+    &.fat {
+      h3 {
+        font-size: 27px;
+        font-weight: 500;
+      }
+    }
+    &.fab {
+      h3 {
+        font-size: 35px;
+        font-weight: 300;
+      }
+      &.f2 {
+        h3 {
+          margin-bottom: 25px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+    h3 {
+      @include roboto();
+      line-height: 1em;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+    p {
+      @include roboto();
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+    .btn.small {
+      span, input[type="submit"] {
+        color: #fff;
+        font-size: 17px;
+      }
+      &:hover {
+        span, input[type="submit"] {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
