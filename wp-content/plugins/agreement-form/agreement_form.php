@@ -60,11 +60,11 @@ function form_creation(){
                             <h2 class="fs-title">User Details</h2>
                             <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
                             <label>Name</label>
-                            <input type="text" name="fname" placeholder=""/>
+                            <input type="text" name="t_fname" placeholder=""/>
                             <label>Email</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t_lname" placeholder=""/>
                             <label>Phone Number</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t_ph" placeholder=""/>
 
                             <input type="button" name="next" class="next action-button" value="Next"/>
                         </fieldset>
@@ -73,16 +73,16 @@ function form_creation(){
                             <h2 class="fs-title">The Parties</h2>
 <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
                             <label>Name of Landlord</label>
-                            <input type="text" name="fname" placeholder=""/>
+                            <input type="text" name="l_name" placeholder=""/>
                             <h5>Name of Tenants</h5>
                             <label>Tenant 1</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t1_name" placeholder=""/>
                             <label>Tenant 2</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t2_name" placeholder=""/>
                             <label>Tenant 3</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t3_name" placeholder=""/>
                             <label>Other Tenants</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="tn_name" placeholder=""/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="button" name="next" class="next action-button" value="Next"/>
@@ -90,14 +90,14 @@ function form_creation(){
                         <fieldset>
                             <h2 class="fs-title">OTHER OCCUPIERS</h2>
                             <label>Adult 1 Name</label>
-                            <input type="text" name="twitter" placeholder=""/>
+                            <input type="text" name="ad1_name" placeholder=""/>
                             <label>Adult 2 Name</label>
-                            <input type="text" name="facebook" placeholder=""/>
+                            <input type="text" name="ad2_name" placeholder=""/>
                             <div class="row col-md-12" style="margin-bottom: 10px;">
-                            <label>Tenant must ensure that not more than</label>
+                            <label>Tenant must ensure that not more than these number of persons live at the Property.</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4">
+                                <select  name="nop" class="col-md-4">
                                     <option value="" selected disabled>Select a number</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -230,17 +230,17 @@ function form_creation(){
                                 <label>TENANCY DATE :</label>
                             </div>
                             <label>START</label>
-                            <input type="date" name="fname" placeholder=""/>
+                            <input type="date" name="ts_date" placeholder=""/>
                             <label>END</label>
-                            <input type="date" name="fname" placeholder=""/>
+                            <input type="date" name="te_date" placeholder=""/>
 
                             <hr/>
                             <h2 class="fs-title">THE RENT</h2>
                             <label>Rent</label>
-                            <input type="text" name="" placeholder="Price"/>
+                            <input type="text" name="" placeholder="rent_price"/>
 
                             <label>Percentage for Rate Increase by landlord</label>
-                            <input type="text" name="" placeholder="Percentage"/>
+                            <input type="text" name="roi_l" placeholder="Percentage"/>
 
                             <div class="row col-md-12">
                             <label style="margin-top: 15px;">Agreed rent payment date</label>
@@ -263,13 +263,13 @@ function form_creation(){
                             </div>
 
                             <label>Date of First Payment</label>
-                            <input type="date" name=""/>
+                            <input type="date" name="fp_date"/>
 
                             <div class="row col-md-12" style="margin-bottom: 10px;">
                                 <label>Method of payment</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4">
+                                <select  name="mop" class="col-md-4">
                                     <option value="" selected disabled>Select a payment method</option>
                                     <option value="1">Standing Order</option>
                                     <option value="2">Direct Debit</option>
