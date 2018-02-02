@@ -93,17 +93,19 @@ function form_creation(){
                             <input type="text" name="twitter" placeholder=""/>
                             <label>Adult 2 Name</label>
                             <input type="text" name="facebook" placeholder=""/>
-                            <div class="row">
-                            <label class="col-md-5">Tenant must ensure that not more than</label>
-                            <select  name="gplus" class="col-md-2">
-                                <option value="Select a number"></option>
-                                <option value="1"></option>
-                                <option value="2"></option>
-                                <option value="3"></option>
-                                <option value="4"></option>
-                                <option value="5"></option>
-                                <option value="6"></option>
-                            </select>
+                            <div class="row col-md-12" style="margin-bottom: 10px;">
+                            <label>Tenant must ensure that not more than</label>
+                            </div>
+                            <div class="row col-md-12">
+                                <select  name="gplus" class="col-md-4">
+                                    <option value="" selected disabled>Select a number</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
                             </div>
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="button" name="next" class="next action-button" value="Next"/>
@@ -237,6 +239,9 @@ function form_creation(){
                             <label>Rent</label>
                             <input type="text" name="" placeholder="Price"/>
 
+                            <label>Percentage for Rate Increase by landlord</label>
+                            <input type="text" name="" placeholder="Percentage"/>
+
                             <div class="row col-md-12">
                             <label style="margin-top: 15px;">Agreed rent payment date</label>
                             </div>
@@ -259,6 +264,19 @@ function form_creation(){
 
                             <label>Date of First Payment</label>
                             <input type="date" name=""/>
+
+                            <div class="row col-md-12" style="margin-bottom: 10px;">
+                                <label>Method of payment</label>
+                            </div>
+                            <div class="row col-md-12">
+                                <select  name="gplus" class="col-md-4">
+                                    <option value="" selected disabled>Select a payment method</option>
+                                    <option value="1">Standing Order</option>
+                                    <option value="2">Direct Debit</option>
+                                    <option value="3">Cheque</option>
+                                    <option value="4">Cash</option>
+                                </select>
+                            </div>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="button" name="next" class="next action-button" value="Next"/>
@@ -342,14 +360,6 @@ function form_creation(){
                             <input type="button" name="next" class="next action-button" value="Next"/>
                         </fieldset>
                         <fieldset>
-                            <h2 class="fs-title">PAYMENT OF THE RENT BY THE TENANT</h2>
-                            <input type="text" name="twitter" placeholder="Twitter"/>
-                            <input type="text" name="facebook" placeholder="Facebook"/>
-                            <input type="text" name="gplus" placeholder="Google Plus"/>
-                            <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                            <input type="button" name="next" class="next action-button" value="Next"/>
-                        </fieldset>
-                        <fieldset>
                             <h2 class="fs-title">THE DEPOSIT</h2>
                             <input type="text" name="email" placeholder="Email"/>
                             <input type="password" name="pass" placeholder="Password"/>
@@ -365,11 +375,10 @@ function form_creation(){
     </div>
     </div>
     <!-- /.MultiStep Form -->
-    <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
 	<?php wp_enqueue_style('agreement-form-style');?>
 	<?php wp_enqueue_style('bootstrap-3-3');?>
 	<?php wp_enqueue_script('agreement-form-script');?>
-<!--	--><?php //wp_dequeue_style('thrive-reset');?>
+	<?php wp_enqueue_script('jquery-easing');?>
 	<?php
 }
 
@@ -379,6 +388,7 @@ add_action('wp_enqueue_scripts', 'agreement_form_scripts');
 function agreement_form_scripts() {
 	wp_register_style( 'agreement-form-style', plugins_url('style.css',__FILE__ ) );
 	wp_register_script( 'agreement-form-script', plugins_url('tenancy-form.js' , __FILE__ ), array( 'jquery' ));
+	wp_register_script( 'jquery-easing', plugins_url('jquery.easing.min.js' , __FILE__ ), array( 'jquery' ));
 
 	wp_register_style( 'bootstrap-3-3', plugins_url('bootstrap.css',__FILE__ ) );
 }
