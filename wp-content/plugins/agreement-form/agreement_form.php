@@ -400,22 +400,20 @@ function form_creation(){
                             <hr/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                            <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                            <input type="button" name="next" class="next action-button" value="Next"/>
+
                         </fieldset>
 
                         <fieldset>
-                            <h2 class="fs-title">THE LANDLORD’S OR AGENT’S CONTACT DETAILS AND SERVICE OF NOTICES ON THE LANDLORD</h2>
-                            <label>Landlord’s agent’s address</label>
-                            <textarea name="" placeholder=""></textarea>
-
-                            <hr/>
+                            <h2 class="fs-title">THE TENANT’S CONTACT DETAILS AND SERVICE OF NOTICES ON THE TENANT</h2>
+                            <label>Service of written notices by email</label>
                             <div class="row">
                             <label>Q. Any notices given under or in connection with this agreement w
                                 required to be given in writing may, alternatively, be sent by email.</label>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 col-xs-8">
-                                    <label class="">Landlord agree</label>
+                                    <label class="">Tenant Agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
                                     <input type="radio"  name="television-fee">
@@ -425,7 +423,7 @@ function form_creation(){
 
                             <div class="row">
                                 <div class="col-md-4 col-xs-8">
-                                    <label class="">Landlord doesn’t agree</label>
+                                    <label class="">Tenant Doesn’t agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
                                     <input type="radio"  name="telephone-rental">
@@ -434,13 +432,13 @@ function form_creation(){
                             <hr/>
 
                             <div class="row col-md-12">
-                            <label>Q.If landlord wishes to agree to service by email</label>
+                            <label>Q.If Tenant wishes to agree to service by email</label>
                             </div>
-                            <label class="">Landlord Email</label>
+                            <label class="">Tenant Email</label>
                             <input type="text" name="" placeholder=""></input>
 
-                            <label class="">Agent email</label>
-                            <input type="text" name="" placeholder=""></input>
+                            <label class="">Tenant’s Emergency contact details</label>
+                            <input type="text" name="" placeholder="Phone Number"></input>
                             <hr/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
