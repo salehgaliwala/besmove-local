@@ -97,7 +97,7 @@ function form_creation(){
                             <label>Tenant must ensure that not more than</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4">
+                                <select  name="gplus" class="col-md-4 col-xs-12">
                                     <option value="" selected disabled>Select a number</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -117,26 +117,26 @@ function form_creation(){
                             <label>The Property is : </label>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-6">
                                 <label class="">Fully furnished</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                 <input type="radio" name="furnished">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-6">
                                 <label class="">Part furnished</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                 <input type="radio" name="furnished">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
-                                <label class="">Unfurnished furnished</label>
+                                <div class="col-md-3 col-xs-6" >
+                                <label class="">Unfurnished</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                 <input type="radio" name="furnished">
                                 </div>
                             </div>
@@ -147,29 +147,29 @@ function form_creation(){
                                 <label>The Property is : </label>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-6">
                                     <label class="">Private garden</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="private-garden">
                                 </div>
                             </div>
                             <textarea placeholder="Private garden Details" hidden name="private-garden-details"></textarea>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-6">
                                     <label class="">Garage</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="garage">
                                 </div>
                             </div>
                             <textarea placeholder="Garage Details" hidden name="garage-details"></textarea>
 
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-6">
                                     <label class="">Other</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="other">
                                 </div>
                             </div>
@@ -182,40 +182,40 @@ function form_creation(){
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-10">
                                     <label class="">Shared access to the Property</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="shared-access-property">
                                 </div>
                             </div>
                             <textarea placeholder="Shared access to the Property Details" hidden name="shared-access-property-details"></textarea>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-10">
                                     <label class="">Shared garden which is shared with</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="shared-access-garden">
                                 </div>
                             </div>
                             <textarea placeholder="Shared garden which is shared with Details" hidden name="shared-access-garden-details"></textarea>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-10">
                                     <label class="">Other shared facilities</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" class="detail-textarea" name="other-shared-facilities">
                                 </div>
                             </div>
                             <textarea placeholder="Other shared facilities Details" hidden name="other-shared-facilities-details"></textarea>
 
                             <div class="row">
-                                <div class="col-md-5">
-                                    <label class="">The Property currently subject to a mortgage</label>
+                                <div class="col-md-5 col-xs-10">
+                                    <label class="margin-fix">The Property currently subject to a mortgage</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox" name="property-mortgage">
                                 </div>
                             </div>
@@ -246,18 +246,18 @@ function form_creation(){
                             <label style="margin-top: 15px;">Agreed rent payment date</label>
                             </div>
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-5 col-xs-10">
                                     <label class="">Per Week (Monday of each week)</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="radio" name="rent-type">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-5 col-xs-10">
                                     <label class="">Per Month (1st day of each month)</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="radio" name="rent-type">
                                 </div>
                             </div>
@@ -265,11 +265,11 @@ function form_creation(){
                             <label>Date of First Payment</label>
                             <input type="date" name=""/>
 
-                            <div class="row col-md-12" style="margin-bottom: 10px;">
+                            <div class="row col-md-12">
                                 <label>Method of payment</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4">
+                                <select  name="gplus" class="col-md-4 col-xs-12">
                                     <option value="" selected disabled>Select a payment method</option>
                                     <option value="1">Standing Order</option>
                                     <option value="2">Direct Debit</option>
@@ -287,68 +287,68 @@ function form_creation(){
                             <label>The following charges are included in and payable as part of the rent (check the boxes which apply ):</label>
                             <br/>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Council Tax</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="council-tax">
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Water and sewerage charges</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="water-sewage-charges">
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Gas</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="gas">
                                 </div>
                             </div>
 
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Electricity</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="electricity">
                                 </div>
                             </div>
 
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Television licence fee</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="television-fee">
                                 </div>
                             </div>
 
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Telephone line rental</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="telephone-rental">
                                 </div>
                             </div>
 
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-8">
                                     <label class="">Broadband</label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-2">
                                     <input type="checkbox"  name="broadband">
                                 </div>
                             </div>
@@ -360,10 +360,89 @@ function form_creation(){
                             <input type="button" name="next" class="next action-button" value="Next"/>
                         </fieldset>
                         <fieldset>
-                            <h2 class="fs-title">THE DEPOSIT</h2>
-                            <input type="text" name="email" placeholder="Email"/>
-                            <input type="password" name="pass" placeholder="Password"/>
-                            <input type="password" name="cpass" placeholder="Confirm Password"/>
+                            <h2 class="fs-title">THE LANDLORD’S OR AGENT’S CONTACT DETAILS AND SERVICE OF NOTICES ON THE LANDLORD</h2>
+                            <label>Landlord’s agent’s address</label>
+                            <textarea name="" placeholder=""></textarea>
+
+                            <hr/>
+                            <div class="row">
+                            <label>Q. Any notices given under or in connection with this agreement w
+                                required to be given in writing may, alternatively, be sent by email.</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-8">
+                                    <label class="">Landlord agree</label>
+                                </div>
+                                <div class="col-md-3 col-xs-2">
+                                    <input type="radio"  name="television-fee">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-xs-8">
+                                    <label class="">Landlord doesn’t agree</label>
+                                </div>
+                                <div class="col-md-3 col-xs-2">
+                                    <input type="radio"  name="telephone-rental">
+                                </div>
+                            </div>
+                            <hr/>
+
+                            <div class="row col-md-12">
+                            <label>Q.If landlord wishes to agree to service by email</label>
+                            </div>
+                            <label class="">Landlord Email</label>
+                            <input type="text" name="" placeholder=""></input>
+
+                            <label class="">Agent email</label>
+                            <input type="text" name="" placeholder=""></input>
+                            <hr/>
+
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                            <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <h2 class="fs-title">THE TENANT’S CONTACT DETAILS AND SERVICE OF NOTICES ON THE TENANT</h2>
+                            <label>Landlord’s agent’s address</label>
+                            <textarea name="" placeholder=""></textarea>
+
+                            <hr/>
+                            <div class="row">
+                            <label>Q. Any notices given under or in connection with this agreement w
+                                required to be given in writing may, alternatively, be sent by email.</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-8">
+                                    <label class="">Landlord agree</label>
+                                </div>
+                                <div class="col-md-3 col-xs-2">
+                                    <input type="radio"  name="television-fee">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-xs-8">
+                                    <label class="">Landlord doesn’t agree</label>
+                                </div>
+                                <div class="col-md-3 col-xs-2">
+                                    <input type="radio"  name="telephone-rental">
+                                </div>
+                            </div>
+                            <hr/>
+
+                            <div class="row col-md-12">
+                            <label>Q.If landlord wishes to agree to service by email</label>
+                            </div>
+                            <label class="">Landlord Email</label>
+                            <input type="text" name="" placeholder=""></input>
+
+                            <label class="">Agent email</label>
+                            <input type="text" name="" placeholder=""></input>
+                            <hr/>
+
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="submit" name="submit" class="submit action-button" value="Submit"/>
                         </fieldset>

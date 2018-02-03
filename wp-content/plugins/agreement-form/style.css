@@ -240,3 +240,20 @@ body {
     float: left;
     font-size : 0.9em;
 }
+#msform select{
+    border-color: #cccccc!important;
+}
+
+@media (max-width: 480px) {
+
+    .margin-fix{
+
+        margin-left: -15px;
+    }
+}
+
+/*Temp Style*/
+.tve_flt {
+display: none;
+}
+
