@@ -99,3 +99,56 @@ jQuery(".submit").click(function(){
     });
 
 });
+
+// Dynamic feilds for tenants and landlords
+jQuery(document).ready(function(){
+    var next = 1;
+    jQuery(".add-more-tenant").click(function(e){
+        e.preventDefault();
+        var addto = "#tenant" + next;
+        var addRemove = "#tenant" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="tenant' + next + '" name="tenant[]" type="text" placeholder="Tenan'+next+'">';
+        var newInput = jQuery(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="tenant">';
+        var removeButton = jQuery(removeBtn);
+        jQuery(addto).after(newInput);
+        jQuery(addRemove).after(removeButton);
+        jQuery("#tenant" + next).attr('data-source',jQuery(addto).attr('data-source'));
+        jQuery("#count").val(next);  
+        
+            jQuery('.remove-me').click(function(e){
+                e.preventDefault();
+                var tenantNum = this.id.charAt(this.id.length-1);
+                var tenantID = "#tenant" + tenantNum;
+                jQuery(this).remove();
+                jQuery(tenantID).remove();
+            });
+    });
+    
+    var nextL = 1;
+    jQuery(".add-more-landlord").click(function(e){
+        e.preventDefault();
+
+        var addto = "#landlord" + nextL;
+        var addRemove = "#landlord" + (nextL);
+        nextL= nextL + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="landlord' + nextL + '" name="landlord[]" type="text" placeholder="Lanlord'+nextL+'">';
+        var newInput = jQuery(newIn);
+        var removeBtn = '<button id="remove' + (nextL - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="landlord">';
+        var removeButton = jQuery(removeBtn);
+        jQuery(addto).after(newInput);
+        jQuery(addRemove).after(removeButton);
+        jQuery("#landlord" + nextL).attr('data-source',jQuery(addto).attr('data-source'));
+        jQuery("#count").val(nextL);  
+      
+            jQuery('.remove-me').click(function(e){
+                e.preventDefault();
+                var landlordNum = this.id.charAt(this.id.length-1);
+                var landlordID = "#landlord" + landlordNum;
+                jQuery(this).remove();
+                jQuery(landlordID).remove();
+            });
+    });
+    
+});

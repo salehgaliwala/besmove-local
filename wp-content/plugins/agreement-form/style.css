@@ -257,3 +257,7 @@ body {
 display: none;
 }
 
+.add-more-tenant{height: 38px !important;margin-top: -10px !important;background: rgb(247, 132, 92) !important;border-radius: 0px !important}
+.add-more-landlord{height: 38px;margin-top: -10px !important;background: rgb(247, 132, 92) !important;border-radius: 0px !important}
+.remove-me{margin-top: -10px !important;border-radius: 0px !important}
+.input-append input{width:95% !important;display: inline-block !important}

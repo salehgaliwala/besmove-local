@@ -12,7 +12,7 @@ function form_creation(){
     <div class="container">
     <div class="row tenancy-form">
         <div class="col-md-12 col-xs-12 col-md-offset-3">
-            <form id="msform">
+            <div id="msform">
 
                 <!-- progressbar -->
                 <div class="col-md-9 col-xs-12">
@@ -56,33 +56,47 @@ function form_creation(){
                         </div>
                     </div>
                     <div class="row">
-                        <fieldset>
-                            <h2 class="fs-title">User Details</h2>
-                            <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
-                            <label>Name</label>
-                            <input type="text" name="fname" placeholder=""/>
-                            <label>Email</label>
-                            <input type="text" name="lname" placeholder=""/>
-                            <label>Phone Number</label>
-                            <input type="text" name="lname" placeholder=""/>
+                        <form id="step1" action="" method="POST">
+                            <fieldset>
+                                <h2 class="fs-title">User Details</h2>
+                                <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
+                                <label>Name</label>
+                                <input type="text" name="fname" placeholder=""/>
+                                <label>Email</label>
+                                <input type="text" name="lname" placeholder=""/>
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" placeholder=""/>
+                                <input type="hidden" name="step" value="1" />
 
-                            <input type="button" name="next" class="next action-button" value="Next"/>
-                        </fieldset>
-
+                                <input type="button" name="next" class="next action-button" value="Next"/>
+                            </fieldset>
+                        </form>    
                         <fieldset>
                             <h2 class="fs-title">The Parties</h2>
 <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
                             <label>Name of Landlord</label>
-                            <input type="text" name="fname" placeholder=""/>
-                            <h5>Name of Tenants</h5>
-                            <label>Tenant 1</label>
-                            <input type="text" name="lname" placeholder=""/>
-                            <label>Tenant 2</label>
-                            <input type="text" name="lname" placeholder=""/>
-                            <label>Tenant 3</label>
-                            <input type="text" name="lname" placeholder=""/>
-                            <label>Other Tenants</label>
-                            <input type="text" name="lname" placeholder=""/>
+                              <input type="hidden" name="count" value="1" />
+                                <div class="control-group" id="fields">
+                                    <label class="control-label" for="field1"></label>
+                                    <div class="controls" id="profs"> 
+                                        <div class="input-append">
+                                            <input autocomplete="off" class="input" id="landlord1" name="landlord[]" type="text" placeholder="landlord" data-items="8"/><button id="b1" class="btn add-more-landlord" type="button">+</button>
+                                        </div>
+                               
+                                    </div>
+                                </div>
+                            <label>Name of Tenants</label>
+                          
+                            <input type="hidden" name="count" value="1" />
+                                <div class="control-group" id="fields">
+                                    <label class="control-label" for="field1"></label>
+                                    <div class="controls" id="profs"> 
+                                        <div class="input-append">
+                                            <input autocomplete="off" class="input" id="tenant1" name="tenant[]" type="text" placeholder="Tenant" data-items="8"/><button id="b1" class="btn add-more-tenant" type="button">+</button>
+                                        </div>
+                               
+                                    </div>
+                                </div>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="button" name="next" class="next action-button" value="Next"/>
@@ -446,7 +460,7 @@ function form_creation(){
                         </fieldset>
                     </div>
                 </div>
-            </form>
+            </div>
 
         </div>
     </div>
@@ -470,4 +484,32 @@ function agreement_form_scripts() {
 	wp_register_style( 'bootstrap-3-3', plugins_url('bootstrap.css',__FILE__ ) );
 }
 
+add_action( 'wp_ajax_nopriv_add_tenancy_fields', 'add_tenancy_fields' );
+add_action( 'wp_ajax_add_tenancy_fields', 'add_tenancy_fields' );
+function add_tenancy_fields()
+{
+    $step = $_POST['step'];
+    if($step == 1)
+        {
+            // We add a post 
+            $fname = $_REQUEST['fname'];
+            $lname = $_REQUEST['lname'];
+            $phone = $_REQUEST['phone'];
+            if(empty($fname) or empty($lname) or empty($phone)
+                 {
+                    $msg = 'Please fill all the fields';
+                 } 
+            else 
+                 {
+                   $pid = wp_insert_post( array(
+                        'post_title'        => $fname .' '.$lname,
+                        'post_status'       => 'draft',                       
+                    ) );
+                   update_post_meta($pid,'fname',$fname);
+                   update_post_meta($pid,'lname',$lname);
+                   update_post_meta($pid,'phone',$phone);
+                   $_SESSION['pid'] = $pid;
+                 }    
+        }
+}    
 ?>
