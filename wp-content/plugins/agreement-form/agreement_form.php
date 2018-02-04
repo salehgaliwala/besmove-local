@@ -60,11 +60,11 @@ function form_creation(){
                             <h2 class="fs-title">User Details</h2>
                             <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
                             <label>Name</label>
-                            <input type="text" name="fname" placeholder=""/>
+                            <input type="text" name="u_name" placeholder=""/>
                             <label>Email</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="u_email" placeholder=""/>
                             <label>Phone Number</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="u_ph" placeholder=""/>
 
                             <input type="button" name="next" class="next action-button" value="Next"/>
                         </fieldset>
@@ -73,16 +73,16 @@ function form_creation(){
                             <h2 class="fs-title">The Parties</h2>
 <!--                            <h3 class="fs-subtitle">Tell us something more about you</h3>-->
                             <label>Name of Landlord</label>
-                            <input type="text" name="fname" placeholder=""/>
+                            <input type="text" name="l_name" placeholder=""/>
                             <h5>Name of Tenants</h5>
                             <label>Tenant 1</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t1_name" placeholder=""/>
                             <label>Tenant 2</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t2_name" placeholder=""/>
                             <label>Tenant 3</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="t3_name" placeholder=""/>
                             <label>Other Tenants</label>
-                            <input type="text" name="lname" placeholder=""/>
+                            <input type="text" name="tn_name" placeholder=""/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                             <input type="button" name="next" class="next action-button" value="Next"/>
@@ -90,14 +90,14 @@ function form_creation(){
                         <fieldset>
                             <h2 class="fs-title">OTHER OCCUPIERS</h2>
                             <label>Adult 1 Name</label>
-                            <input type="text" name="twitter" placeholder=""/>
+                            <input type="text" name="ad1_name" placeholder=""/>
                             <label>Adult 2 Name</label>
-                            <input type="text" name="facebook" placeholder=""/>
+                            <input type="text" name="ad2_name" placeholder=""/>
                             <div class="row col-md-12" style="margin-bottom: 10px;">
                             <label>Tenant must ensure that not more than</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4 col-xs-12">
+                                <select  name="nop" class="col-md-4 col-xs-12">
                                     <option value="" selected disabled>Select a number</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -230,17 +230,17 @@ function form_creation(){
                                 <label>TENANCY DATE :</label>
                             </div>
                             <label>START</label>
-                            <input type="date" name="fname" placeholder=""/>
+                            <input type="date" name="tenancy_start_date" placeholder=""/>
                             <label>END</label>
-                            <input type="date" name="fname" placeholder=""/>
+                            <input type="date" name="tenancy_end_date" placeholder=""/>
 
                             <hr/>
                             <h2 class="fs-title">THE RENT</h2>
                             <label>Rent</label>
-                            <input type="text" name="" placeholder="Price"/>
+                            <input type="text" name="rent_price" placeholder="Price"/>
 
                             <label>Percentage for Rate Increase by landlord</label>
-                            <input type="text" name="" placeholder="Percentage"/>
+                            <input type="text" name="roi_landlord" placeholder="Percentage"/>
 
                             <div class="row col-md-12">
                             <label style="margin-top: 15px;">Agreed rent payment date</label>
@@ -263,13 +263,13 @@ function form_creation(){
                             </div>
 
                             <label>Date of First Payment</label>
-                            <input type="date" name=""/>
+                            <input type="date" name="date_of_first_payment"/>
 
                             <div class="row col-md-12">
                                 <label>Method of payment</label>
                             </div>
                             <div class="row col-md-12">
-                                <select  name="gplus" class="col-md-4 col-xs-12">
+                                <select  name="method_of_payment" class="col-md-4 col-xs-12">
                                     <option value="" selected disabled>Select a payment method</option>
                                     <option value="1">Standing Order</option>
                                     <option value="2">Direct Debit</option>
@@ -362,7 +362,7 @@ function form_creation(){
                         <fieldset>
                             <h2 class="fs-title">THE LANDLORD’S OR AGENT’S CONTACT DETAILS AND SERVICE OF NOTICES ON THE LANDLORD</h2>
                             <label>Landlord’s agent’s address</label>
-                            <textarea name="" placeholder=""></textarea>
+                            <textarea name="landlord’s_agents_address" placeholder=""></textarea>
 
                             <hr/>
                             <div class="row">
@@ -374,7 +374,7 @@ function form_creation(){
                                     <label class="">Landlord agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
-                                    <input type="radio"  name="television-fee">
+                                    <input type="radio"  name="sent_by_email">
                                 </div>
                             </div>
 
@@ -384,7 +384,7 @@ function form_creation(){
                                     <label class="">Landlord doesn’t agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
-                                    <input type="radio"  name="telephone-rental">
+                                    <input type="radio"  name="sent_by_email">
                                 </div>
                             </div>
                             <hr/>
@@ -393,10 +393,10 @@ function form_creation(){
                             <label>Q.If landlord wishes to agree to service by email</label>
                             </div>
                             <label class="">Landlord Email</label>
-                            <input type="text" name="" placeholder=""></input>
+                            <input type="text" name="landlord_email" placeholder=""></input>
 
                             <label class="">Agent email</label>
-                            <input type="text" name="" placeholder=""></input>
+                            <input type="text" name="agent_email" placeholder=""></input>
                             <hr/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
@@ -416,7 +416,7 @@ function form_creation(){
                                     <label class="">Tenant Agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
-                                    <input type="radio"  name="television-fee">
+                                    <input type="radio"  name="sent_by_email_tenant">
                                 </div>
                             </div>
 
@@ -426,7 +426,7 @@ function form_creation(){
                                     <label class="">Tenant Doesn’t agree</label>
                                 </div>
                                 <div class="col-md-3 col-xs-2">
-                                    <input type="radio"  name="telephone-rental">
+                                    <input type="radio"  name="sent_by_email_tenant">
                                 </div>
                             </div>
                             <hr/>
@@ -435,10 +435,10 @@ function form_creation(){
                             <label>Q.If Tenant wishes to agree to service by email</label>
                             </div>
                             <label class="">Tenant Email</label>
-                            <input type="text" name="" placeholder=""></input>
+                            <input type="text" name="tenant_email" placeholder=""></input>
 
                             <label class="">Tenant’s Emergency contact details</label>
-                            <input type="text" name="" placeholder="Phone Number"></input>
+                            <input type="text" name="tenants_emergency_contact_details" placeholder="Phone Number"></input>
                             <hr/>
 
                             <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
